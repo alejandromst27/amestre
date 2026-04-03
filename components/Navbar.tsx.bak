@@ -87,7 +87,7 @@ export default function Navbar() {
                 letterSpacing: "0.15em",
                 fontFamily: "var(--font-inter), sans-serif",
                 fontWeight: language === "en" ? 500 : 400,
-                color: language === "en" ? "#000000" : "#6b6b6b",
+                color: language === "en" ? "#c9a96e" : "#6b6b6b",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) => !language.includes("en") && (e.currentTarget.style.color = "#1a1a1a")}
@@ -106,7 +106,7 @@ export default function Navbar() {
                 letterSpacing: "0.15em",
                 fontFamily: "var(--font-inter), sans-serif",
                 fontWeight: language === "es" ? 500 : 400,
-                color: language === "es" ? "#000000" : "#6b6b6b",
+                color: language === "es" ? "#c9a96e" : "#6b6b6b",
                 transition: "color 0.2s",
               }}
               onMouseEnter={(e) => !language.includes("es") && (e.currentTarget.style.color = "#1a1a1a")}
@@ -121,8 +121,8 @@ export default function Navbar() {
               href="/dashboard"
               style={{
                 padding: "0.5rem 1.5rem",
-                border: "1px solid #000000",
-                color: "#000000",
+                border: "1px solid #c9a96e",
+                color: "#c9a96e",
                 textDecoration: "none",
                 fontSize: "0.75rem",
                 letterSpacing: "0.15em",
@@ -131,12 +131,12 @@ export default function Navbar() {
                 transition: "all 0.2s",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#000000";
+                e.currentTarget.style.backgroundColor = "#c9a96e";
                 e.currentTarget.style.color = "#0a0a0a";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = "transparent";
-                e.currentTarget.style.color = "#000000";
+                e.currentTarget.style.color = "#c9a96e";
               }}
             >
               {t.myAccount}
@@ -146,8 +146,8 @@ export default function Navbar() {
               href="/login"
               style={{
                 padding: "0.5rem 1.5rem",
-                border: "1px solid #000000",
-                color: "#000000",
+                border: "1px solid #c9a96e",
+                color: "#c9a96e",
                 textDecoration: "none",
                 fontSize: "0.75rem",
                 letterSpacing: "0.15em",
@@ -156,12 +156,12 @@ export default function Navbar() {
                 transition: "all 0.2s",
               }}
               onMouseEnter={(e) => {
-                e.currentTarget.style.backgroundColor = "#000000";
+                e.currentTarget.style.backgroundColor = "#c9a96e";
                 e.currentTarget.style.color = "#0a0a0a";
               }}
               onMouseLeave={(e) => {
                 e.currentTarget.style.backgroundColor = "transparent";
-                e.currentTarget.style.color = "#000000";
+                e.currentTarget.style.color = "#c9a96e";
               }}
             >
               {t.signIn}
@@ -205,7 +205,7 @@ export default function Navbar() {
           <NavLink href="#about" onClick={() => setMenuOpen(false)}>{t.about}</NavLink>
           <Link
             href={loggedIn ? "/dashboard" : "/login"}
-            style={{ color: "#000000", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.15em" }}
+            style={{ color: "#c9a96e", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.15em" }}
           >
             {loggedIn ? t.myAccount : t.signIn}
           </Link>

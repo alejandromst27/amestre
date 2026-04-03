@@ -71,7 +71,7 @@ export default function CustomizerSection() {
             style={{
               fontSize: "0.7rem",
               letterSpacing: "0.4em",
-              color: "#000000",
+              color: "#c9a96e",
               marginBottom: "1rem",
               fontFamily: "var(--font-inter), sans-serif",
             }}
@@ -176,7 +176,7 @@ export default function CustomizerSection() {
                     style={{
                       padding: "1.25rem 1.5rem",
                       background: isSelected ? "#f0ede8" : "transparent",
-                      border: `1px solid ${isSelected ? "#000000" : "#d0d0d0"}`,
+                      border: `1px solid ${isSelected ? "#c9a96e" : "#d0d0d0"}`,
                       cursor: "pointer",
                       textAlign: "left",
                       transition: "all 0.2s",
@@ -214,7 +214,7 @@ export default function CustomizerSection() {
                       </p>
                     </div>
                     {isSelected && (
-                      <span style={{ color: "#000000", fontSize: "1.2rem" }}>✓</span>
+                      <span style={{ color: "#c9a96e", fontSize: "1.2rem" }}>✓</span>
                     )}
                   </button>
                 );
@@ -243,7 +243,7 @@ export default function CustomizerSection() {
                       style={{
                         padding: "1.25rem 1.5rem",
                         background: isSelected ? "#f0ede8" : "transparent",
-                        border: `1px solid ${isSelected ? "#000000" : "#d0d0d0"}`,
+                        border: `1px solid ${isSelected ? "#c9a96e" : "#d0d0d0"}`,
                         cursor: "pointer",
                         textAlign: "left",
                         transition: "all 0.2s",
@@ -281,7 +281,7 @@ export default function CustomizerSection() {
                         </p>
                       </div>
                       {isSelected && (
-                        <span style={{ color: "#000000", fontSize: "1.2rem" }}>✓</span>
+                        <span style={{ color: "#c9a96e", fontSize: "1.2rem" }}>✓</span>
                       )}
                     </button>
                   );

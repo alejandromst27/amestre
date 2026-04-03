@@ -26,7 +26,7 @@ export default function FAQSection() {
             style={{
               fontSize: "0.7rem",
               letterSpacing: "0.4em",
-              color: "#000000",
+              color: "#c9a96e",
               marginBottom: "1rem",
               fontFamily: "var(--font-inter), sans-serif",
             }}
@@ -87,7 +87,7 @@ export default function FAQSection() {
                 <span
                   style={{
                     fontSize: "1.5rem",
-                    color: "#000000",
+                    color: "#c9a96e",
                     minWidth: "30px",
                     textAlign: "right",
                     transition: "transform 0.2s",
@@ -145,7 +145,7 @@ export default function FAQSection() {
             style={{
               display: "inline-block",
               padding: "0.75rem 2rem",
-              backgroundColor: "#000000",
+              backgroundColor: "#c9a96e",
               color: "#0a0a0a",
               textDecoration: "none",
               fontSize: "0.75rem",
@@ -155,7 +155,7 @@ export default function FAQSection() {
               transition: "background-color 0.2s",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e0c99a")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#000000")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c9a96e")}
           >
             {translations[language].getInTouch}
           </a>

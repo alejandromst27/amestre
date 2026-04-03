@@ -44,7 +44,7 @@ export default function HeroSection() {
           style={{
             fontSize: "0.7rem",
             letterSpacing: "0.4em",
-            color: "#000000",
+            color: "#c9a96e",
             marginBottom: "2rem",
             fontFamily: "var(--font-inter), sans-serif",
             fontWeight: 400,
@@ -89,7 +89,7 @@ export default function HeroSection() {
             href="/login"
             style={{
               padding: "1rem 2.5rem",
-              backgroundColor: "#000000",
+              backgroundColor: "#c9a96e",
               color: "#0a0a0a",
               textDecoration: "none",
               fontSize: "0.75rem",
@@ -100,7 +100,7 @@ export default function HeroSection() {
               transition: "background-color 0.2s",
             }}
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e0c99a")}
-            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#000000")}
+            onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c9a96e")}
           >
             {t.startYourJourney}
           </Link>

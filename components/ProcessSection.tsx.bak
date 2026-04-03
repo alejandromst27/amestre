@@ -48,7 +48,7 @@ export default function ProcessSection() {
             style={{
               fontSize: "0.7rem",
               letterSpacing: "0.4em",
-              color: "#000000",
+              color: "#c9a96e",
               marginBottom: "1rem",
               fontFamily: "var(--font-inter), sans-serif",
             }}
@@ -87,7 +87,7 @@ export default function ProcessSection() {
                 style={{
                   fontFamily: "var(--font-cormorant), serif",
                   fontSize: "1rem",
-                  color: "#000000",
+                  color: "#c9a96e",
                   letterSpacing: "0.1em",
                   paddingTop: "0.25rem",
                 }}

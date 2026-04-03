@@ -117,7 +117,7 @@ export default function LoginPage() {
                   padding: "0.75rem",
                   background: "none",
                   border: "none",
-                  borderBottom: mode === tab ? "2px solid #000000" : "2px solid transparent",
+                  borderBottom: mode === tab ? "2px solid #c9a96e" : "2px solid transparent",
                   color: mode === tab ? "#f0ebe4" : "#9a9188",
                   cursor: "pointer",
                   fontSize: "0.7rem",
@@ -171,7 +171,7 @@ export default function LoginPage() {
                   border: `1px solid ${message.type === "error" ? "rgba(220,38,38,0.3)" : "rgba(201,169,110,0.3)"}`,
                   fontFamily: "var(--font-inter), sans-serif",
                   fontSize: "0.8rem",
-                  color: message.type === "error" ? "#f87171" : "#000000",
+                  color: message.type === "error" ? "#f87171" : "#c9a96e",
                   lineHeight: 1.5,
                 }}
               >
@@ -184,7 +184,7 @@ export default function LoginPage() {
               disabled={loading}
               style={{
                 padding: "1rem",
-                backgroundColor: loading ? "#2a2a2a" : "#000000",
+                backgroundColor: loading ? "#2a2a2a" : "#c9a96e",
                 color: loading ? "#9a9188" : "#0a0a0a",
                 border: "none",
                 cursor: loading ? "not-allowed" : "pointer",
@@ -269,7 +269,7 @@ function InputField({
           outline: "none",
           transition: "border-color 0.2s",
         }}
-        onFocus={(e) => (e.currentTarget.style.borderColor = "#000000")}
+        onFocus={(e) => (e.currentTarget.style.borderColor = "#c9a96e")}
         onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2a2a")}
       />
     </div>

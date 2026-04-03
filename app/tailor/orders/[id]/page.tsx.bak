@@ -143,7 +143,7 @@ export default function OrderDetail() {
               fontFamily: "var(--font-inter), sans-serif",
               fontSize: "0.65rem",
               letterSpacing: "0.2em",
-              color: "#000000",
+              color: "#c9a96e",
             }}
           >
             TAILOR PORTAL
@@ -156,9 +156,9 @@ export default function OrderDetail() {
           disabled={saving}
           style={{
             padding: "0.5rem 1.5rem",
-            backgroundColor: saved ? "transparent" : "#000000",
-            border: saved ? "1px solid #000000" : "none",
-            color: saved ? "#000000" : "#0a0a0a",
+            backgroundColor: saved ? "transparent" : "#c9a96e",
+            border: saved ? "1px solid #c9a96e" : "none",
+            color: saved ? "#c9a96e" : "#0a0a0a",
             fontFamily: "var(--font-inter), sans-serif",
             fontSize: "0.7rem",
             letterSpacing: "0.15em",
@@ -239,7 +239,7 @@ export default function OrderDetail() {
                       style={{
                         fontFamily: "var(--font-cormorant), serif",
                         fontSize: "1.6rem",
-                        color: "#000000",
+                        color: "#c9a96e",
                         fontWeight: 300,
                       }}
                     >
@@ -303,7 +303,7 @@ export default function OrderDetail() {
                   style={{
                     padding: "0.6rem 1rem",
                     background: status === s ? "#1e1e1e" : "transparent",
-                    border: `1px solid ${status === s ? "#000000" : "#2a2a2a"}`,
+                    border: `1px solid ${status === s ? "#c9a96e" : "#2a2a2a"}`,
                     color: status === s ? "#f0ebe4" : "#9a9188",
                     cursor: "pointer",
                     fontFamily: "var(--font-inter), sans-serif",
@@ -316,7 +316,7 @@ export default function OrderDetail() {
                   }}
                 >
                   {status === s && (
-                    <span style={{ color: "#000000", fontSize: "0.7rem" }}>●</span>
+                    <span style={{ color: "#c9a96e", fontSize: "0.7rem" }}>●</span>
                   )}
                   {STATUS_LABELS[s]}
                 </button>
@@ -344,7 +344,7 @@ export default function OrderDetail() {
                 lineHeight: 1.7,
                 fontWeight: 300,
               }}
-              onFocus={(e) => (e.currentTarget.style.borderColor = "#000000")}
+              onFocus={(e) => (e.currentTarget.style.borderColor = "#c9a96e")}
               onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2a2a")}
             />
           </Section>
@@ -383,7 +383,7 @@ function Section({
           fontFamily: "var(--font-inter), sans-serif",
           fontSize: "0.65rem",
           letterSpacing: "0.2em",
-          color: "#000000",
+          color: "#c9a96e",
           marginBottom: "1.25rem",
         }}
       >

@@ -71,7 +71,7 @@ export default function Footer() {
               fontFamily: "var(--font-inter), sans-serif",
               fontSize: "0.7rem",
               letterSpacing: "0.2em",
-              color: "#000000",
+              color: "#c9a96e",
               marginBottom: "1.25rem",
             }}
           >
@@ -106,7 +106,7 @@ export default function Footer() {
                 fontFamily: "var(--font-inter), sans-serif",
                 fontSize: "0.7rem",
                 letterSpacing: "0.2em",
-                color: "#000000",
+                color: "#c9a96e",
                 marginBottom: "1.25rem",
               }}
             >
@@ -138,7 +138,7 @@ export default function Footer() {
               fontFamily: "var(--font-inter), sans-serif",
               fontSize: "0.7rem",
               letterSpacing: "0.2em",
-              color: "#000000",
+              color: "#c9a96e",
               marginBottom: "1.25rem",
             }}
           >
