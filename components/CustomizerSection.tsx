@@ -2,39 +2,41 @@
 
 import { useState } from "react";
 
-const options = {
-  toe: [
-    { id: "round", label: "Round Toe", description: "Classic and versatile" },
-    { id: "pointed", label: "Pointed Toe", description: "Elegant and refined" },
-    { id: "square", label: "Square Toe", description: "Modern and bold" },
-  ],
-  heel: [
-    { id: "flat", label: "Flat", description: "Minimalist and casual" },
-    { id: "1inch", label: "1 Inch", description: "Elegant, everyday wear" },
-    { id: "2inch", label: "2 Inch", description: "Formal and sophisticated" },
-  ],
-  closure: [
-    { id: "lace", label: "Lace-Up", description: "Classic and adjustable" },
-    { id: "buckle", label: "Buckle", description: "Timeless and refined" },
-    { id: "slip", label: "Slip-On", description: "Convenient and elegant" },
-  ],
-  sole: [
-    { id: "leather", label: "Leather Sole", description: "Traditional and premium" },
-    { id: "rubber", label: "Rubber Sole", description: "Durable and practical" },
-  ],
-};
+const shoeTypes = [
+  {
+    id: "penny-loafer",
+    label: "Penny Loafer",
+    description: "Timeless classic with a sleek silhouette",
+    image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
+    customizable: true,
+  },
+  {
+    id: "oxford",
+    label: "Oxford Shoe",
+    description: "Elegant and formal, perfect for any occasion",
+    image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
+    customizable: true,
+  },
+  {
+    id: "espadrille",
+    label: "Espadrille",
+    description: "Casual and comfortable, perfect for summer",
+    image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
+    customizable: false,
+  },
+];
 
-type Category = keyof typeof options;
+const soleOptions = [
+  { id: "leather", label: "Leather Sole", description: "Traditional and premium" },
+  { id: "rubber", label: "Rubber Sole", description: "Durable and practical" },
+];
 
 export default function CustomizerSection() {
-  const [selected, setSelected] = useState({
-    toe: "round",
-    heel: "1inch",
-    closure: "lace",
-    sole: "leather",
-  });
+  const [selectedShoe, setSelectedShoe] = useState("penny-loafer");
+  const [selectedSole, setSelectedSole] = useState("leather");
 
-  const [activeCategory, setActiveCategory] = useState<Category>("toe");
+  const currentShoe = shoeTypes.find((s) => s.id === selectedShoe)!;
+  const isCustomizable = currentShoe.customizable;
 
   return (
     <section
@@ -97,8 +99,8 @@ export default function CustomizerSection() {
           >
             {/* Shoe illustration */}
             <img
-              src="https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop"
-              alt="Bespoke Shoe"
+              src={currentShoe.image}
+              alt={currentShoe.label}
               style={{
                 width: "100%",
                 height: "100%",
@@ -126,51 +128,38 @@ export default function CustomizerSection() {
                   letterSpacing: "0.1em",
                 }}
               >
-                {options.toe.find((o) => o.id === selected.toe)?.label} ·{" "}
-                {options.heel.find((o) => o.id === selected.heel)?.label} ·{" "}
-                {options.closure.find((o) => o.id === selected.closure)?.label}
+                {currentShoe.label}
+                {isCustomizable && selectedSole && (
+                  <>
+                    {" "}·{" "}
+                    {soleOptions.find((s) => s.id === selectedSole)?.label}
+                  </>
+                )}
               </p>
             </div>
           </div>
 
           {/* Right: Controls */}
           <div style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}>
-            {/* Category tabs */}
-            <div style={{ display: "flex", gap: "0", borderBottom: "1px solid #d0d0d0" }}>
-              {(Object.keys(options) as Category[]).map((cat) => (
-                <button
-                  key={cat}
-                  onClick={() => setActiveCategory(cat)}
-                  style={{
-                    padding: "0.75rem 1.5rem",
-                    background: "none",
-                    border: "none",
-                    borderBottom: activeCategory === cat ? "2px solid #c9a96e" : "2px solid transparent",
-                    color: activeCategory === cat ? "#1a1a1a" : "#6b6b6b",
-                    cursor: "pointer",
-                    fontSize: "0.7rem",
-                    letterSpacing: "0.15em",
-                    fontFamily: "var(--font-inter), sans-serif",
-                    textTransform: "uppercase",
-                    transition: "all 0.2s",
-                    marginBottom: "-1px",
-                  }}
-                >
-                  {cat}
-                </button>
-              ))}
-            </div>
-
-            {/* Options */}
+            {/* Shoe Type Selection */}
             <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-              {options[activeCategory].map((option) => {
-                const isSelected = selected[activeCategory] === option.id;
+              <h3
+                style={{
+                  fontFamily: "var(--font-cormorant), serif",
+                  fontSize: "1rem",
+                  color: "#1a1a1a",
+                  marginBottom: "0.5rem",
+                  letterSpacing: "0.05em",
+                }}
+              >
+                Choose Your Style
+              </h3>
+              {shoeTypes.map((shoe) => {
+                const isSelected = selectedShoe === shoe.id;
                 return (
                   <button
-                    key={option.id}
-                    onClick={() =>
-                      setSelected((prev) => ({ ...prev, [activeCategory]: option.id }))
-                    }
+                    key={shoe.id}
+                    onClick={() => setSelectedShoe(shoe.id)}
                     style={{
                       padding: "1.25rem 1.5rem",
                       background: isSelected ? "#f0ede8" : "transparent",
@@ -198,7 +187,7 @@ export default function CustomizerSection() {
                           marginBottom: "0.2rem",
                         }}
                       >
-                        {option.label}
+                        {shoe.label}
                       </p>
                       <p
                         style={{
@@ -208,7 +197,7 @@ export default function CustomizerSection() {
                           fontWeight: 300,
                         }}
                       >
-                        {option.description}
+                        {shoe.description}
                       </p>
                     </div>
                     {isSelected && (
@@ -219,6 +208,95 @@ export default function CustomizerSection() {
               })}
             </div>
 
+            {/* Sole Selection - Only for customizable shoes */}
+            {isCustomizable ? (
+              <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+                <h3
+                  style={{
+                    fontFamily: "var(--font-cormorant), serif",
+                    fontSize: "1rem",
+                    color: "#1a1a1a",
+                    marginBottom: "0.5rem",
+                    letterSpacing: "0.05em",
+                  }}
+                >
+                  Select Sole
+                </h3>
+                {soleOptions.map((sole) => {
+                  const isSelected = selectedSole === sole.id;
+                  return (
+                    <button
+                      key={sole.id}
+                      onClick={() => setSelectedSole(sole.id)}
+                      style={{
+                        padding: "1.25rem 1.5rem",
+                        background: isSelected ? "#f0ede8" : "transparent",
+                        border: `1px solid ${isSelected ? "#c9a96e" : "#d0d0d0"}`,
+                        cursor: "pointer",
+                        textAlign: "left",
+                        transition: "all 0.2s",
+                        display: "flex",
+                        justifyContent: "space-between",
+                        alignItems: "center",
+                      }}
+                      onMouseEnter={(e) => {
+                        if (!isSelected) e.currentTarget.style.borderColor = "#6b6b6b";
+                      }}
+                      onMouseLeave={(e) => {
+                        if (!isSelected) e.currentTarget.style.borderColor = "#d0d0d0";
+                      }}
+                    >
+                      <div>
+                        <p
+                          style={{
+                            fontFamily: "var(--font-cormorant), serif",
+                            fontSize: "1.2rem",
+                            color: isSelected ? "#1a1a1a" : "#6b6b6b",
+                            marginBottom: "0.2rem",
+                          }}
+                        >
+                          {sole.label}
+                        </p>
+                        <p
+                          style={{
+                            fontFamily: "var(--font-inter), sans-serif",
+                            fontSize: "0.75rem",
+                            color: "#6b6b6b",
+                            fontWeight: 300,
+                          }}
+                        >
+                          {sole.description}
+                        </p>
+                      </div>
+                      {isSelected && (
+                        <span style={{ color: "#c9a96e", fontSize: "1.2rem" }}>✓</span>
+                      )}
+                    </button>
+                  );
+                })}
+              </div>
+            ) : (
+              <div
+                style={{
+                  padding: "1.5rem",
+                  backgroundColor: "#f0ede8",
+                  border: "1px solid #d0d0d0",
+                  textAlign: "center",
+                }}
+              >
+                <p
+                  style={{
+                    fontFamily: "var(--font-inter), sans-serif",
+                    fontSize: "0.9rem",
+                    color: "#6b6b6b",
+                    fontWeight: 300,
+                  }}
+                >
+                  This style comes in one bespoke version with no additional customization.
+                </p>
+              </div>
+            )}
+
             <p
               style={{
                 fontFamily: "var(--font-inter), sans-serif",
@@ -228,7 +306,7 @@ export default function CustomizerSection() {
                 fontWeight: 300,
               }}
             >
-              These are just a few of the choices available. Our master cobblers will work with you to perfect every detail of your custom shoes.
+              Each shoe is handcrafted to your exact measurements. Our master cobblers will work with you to perfect every detail.
             </p>
           </div>
         </div>
