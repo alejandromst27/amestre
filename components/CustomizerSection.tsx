@@ -40,9 +40,9 @@ export default function CustomizerSection() {
     <section
       id="customize"
       style={{
-        backgroundColor: "#0d0d0d",
+        backgroundColor: "#faf8f5",
         padding: "8rem 2rem",
-        borderTop: "1px solid #1e1e1e",
+        borderTop: "1px solid #e0e0e0",
       }}
     >
       <div style={{ maxWidth: "1100px", margin: "0 auto" }}>
@@ -64,7 +64,7 @@ export default function CustomizerSection() {
               fontFamily: "var(--font-cormorant), serif",
               fontSize: "clamp(2.5rem, 5vw, 4rem)",
               fontWeight: 300,
-              color: "#f0ebe4",
+              color: "#1a1a1a",
               lineHeight: 1.1,
             }}
           >
@@ -85,8 +85,8 @@ export default function CustomizerSection() {
           <div
             style={{
               aspectRatio: "3/4",
-              backgroundColor: "#141414",
-              border: "1px solid #2a2a2a",
+              backgroundColor: "#f0ede8",
+              border: "1px solid #d0d0d0",
               display: "flex",
               flexDirection: "column",
               alignItems: "center",
@@ -114,15 +114,15 @@ export default function CustomizerSection() {
                 left: "1.5rem",
                 right: "1.5rem",
                 padding: "1rem",
-                backgroundColor: "rgba(10,10,10,0.9)",
-                borderTop: "1px solid #2a2a2a",
+                backgroundColor: "rgba(250,248,245,0.95)",
+                borderTop: "1px solid #d0d0d0",
               }}
             >
               <p
                 style={{
                   fontFamily: "var(--font-inter), sans-serif",
                   fontSize: "0.7rem",
-                  color: "#9a9188",
+                  color: "#6b6b6b",
                   letterSpacing: "0.1em",
                 }}
               >
@@ -136,7 +136,7 @@ export default function CustomizerSection() {
           {/* Right: Controls */}
           <div style={{ display: "flex", flexDirection: "column", gap: "2.5rem" }}>
             {/* Category tabs */}
-            <div style={{ display: "flex", gap: "0", borderBottom: "1px solid #2a2a2a" }}>
+            <div style={{ display: "flex", gap: "0", borderBottom: "1px solid #d0d0d0" }}>
               {(Object.keys(options) as Category[]).map((cat) => (
                 <button
                   key={cat}
@@ -146,7 +146,7 @@ export default function CustomizerSection() {
                     background: "none",
                     border: "none",
                     borderBottom: activeCategory === cat ? "2px solid #c9a96e" : "2px solid transparent",
-                    color: activeCategory === cat ? "#f0ebe4" : "#9a9188",
+                    color: activeCategory === cat ? "#1a1a1a" : "#6b6b6b",
                     cursor: "pointer",
                     fontSize: "0.7rem",
                     letterSpacing: "0.15em",
@@ -173,8 +173,8 @@ export default function CustomizerSection() {
                     }
                     style={{
                       padding: "1.25rem 1.5rem",
-                      background: isSelected ? "#1a1a1a" : "transparent",
-                      border: `1px solid ${isSelected ? "#c9a96e" : "#2a2a2a"}`,
+                      background: isSelected ? "#f0ede8" : "transparent",
+                      border: `1px solid ${isSelected ? "#c9a96e" : "#d0d0d0"}`,
                       cursor: "pointer",
                       textAlign: "left",
                       transition: "all 0.2s",
@@ -183,10 +183,10 @@ export default function CustomizerSection() {
                       alignItems: "center",
                     }}
                     onMouseEnter={(e) => {
-                      if (!isSelected) e.currentTarget.style.borderColor = "#9a9188";
+                      if (!isSelected) e.currentTarget.style.borderColor = "#6b6b6b";
                     }}
                     onMouseLeave={(e) => {
-                      if (!isSelected) e.currentTarget.style.borderColor = "#2a2a2a";
+                      if (!isSelected) e.currentTarget.style.borderColor = "#d0d0d0";
                     }}
                   >
                     <div>
@@ -194,7 +194,7 @@ export default function CustomizerSection() {
                         style={{
                           fontFamily: "var(--font-cormorant), serif",
                           fontSize: "1.2rem",
-                          color: isSelected ? "#f0ebe4" : "#9a9188",
+                          color: isSelected ? "#1a1a1a" : "#6b6b6b",
                           marginBottom: "0.2rem",
                         }}
                       >
@@ -204,7 +204,7 @@ export default function CustomizerSection() {
                         style={{
                           fontFamily: "var(--font-inter), sans-serif",
                           fontSize: "0.75rem",
-                          color: "#9a9188",
+                          color: "#6b6b6b",
                           fontWeight: 300,
                         }}
                       >
@@ -223,7 +223,7 @@ export default function CustomizerSection() {
               style={{
                 fontFamily: "var(--font-inter), sans-serif",
                 fontSize: "0.8rem",
-                color: "#9a9188",
+                color: "#6b6b6b",
                 lineHeight: 1.7,
                 fontWeight: 300,
               }}

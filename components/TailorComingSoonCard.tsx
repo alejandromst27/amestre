@@ -18,16 +18,16 @@ export default function TailorComingSoonCard() {
   return (
     <section
       style={{
-        backgroundColor: "#0a0a0a",
+        backgroundColor: "#faf8f5",
         padding: "6rem 2rem",
-        borderTop: "1px solid #1e1e1e",
+        borderTop: "1px solid #e0e0e0",
       }}
     >
       <div style={{ maxWidth: "800px", margin: "0 auto" }}>
         <div
           style={{
-            backgroundColor: "#141414",
-            border: "1px solid #2a2a2a",
+            backgroundColor: "#ffffff",
+            border: "1px solid #d0d0d0",
             padding: "4rem 3rem",
             textAlign: "center",
           }}
@@ -55,7 +55,7 @@ export default function TailorComingSoonCard() {
               fontFamily: "var(--font-cormorant), serif",
               fontSize: "clamp(2rem, 4vw, 3rem)",
               fontWeight: 300,
-              color: "#f0ebe4",
+              color: "#1a1a1a",
               lineHeight: 1.1,
               marginBottom: "1rem",
             }}
@@ -68,7 +68,7 @@ export default function TailorComingSoonCard() {
             style={{
               fontFamily: "var(--font-inter), sans-serif",
               fontSize: "0.95rem",
-              color: "#9a9188",
+              color: "#6b6b6b",
               lineHeight: 1.8,
               maxWidth: "500px",
               margin: "0 auto 2.5rem",
@@ -88,16 +88,16 @@ export default function TailorComingSoonCard() {
               required
               style={{
                 padding: "0.75rem 1.25rem",
-                backgroundColor: "#1a1a1a",
-                border: "1px solid #2a2a2a",
-                color: "#f0ebe4",
+                backgroundColor: "#ffffff",
+                border: "1px solid #d0d0d0",
+                color: "#1a1a1a",
                 fontFamily: "var(--font-inter), sans-serif",
                 fontSize: "0.85rem",
                 minWidth: "250px",
                 transition: "border-color 0.2s",
               }}
               onFocus={(e) => (e.currentTarget.style.borderColor = "#c9a96e")}
-              onBlur={(e) => (e.currentTarget.style.borderColor = "#2a2a2a")}
+              onBlur={(e) => (e.currentTarget.style.borderColor = "#d0d0d0")}
             />
             <button
               type="submit"

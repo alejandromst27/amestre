@@ -52,9 +52,9 @@ export default function FAQSection() {
     <section
       id="faq"
       style={{
-        backgroundColor: "#0a0a0a",
+        backgroundColor: "#faf8f5",
         padding: "8rem 2rem",
-        borderTop: "1px solid #1e1e1e",
+        borderTop: "1px solid #e0e0e0",
       }}
     >
       <div style={{ maxWidth: "900px", margin: "0 auto" }}>
@@ -76,7 +76,7 @@ export default function FAQSection() {
               fontFamily: "var(--font-cormorant), serif",
               fontSize: "clamp(2.5rem, 5vw, 4rem)",
               fontWeight: 300,
-              color: "#f0ebe4",
+              color: "#1a1a1a",
               lineHeight: 1.1,
             }}
           >
@@ -90,7 +90,7 @@ export default function FAQSection() {
             <div
               key={index}
               style={{
-                borderTop: "1px solid #1e1e1e",
+                borderTop: "1px solid #e0e0e0",
                 paddingTop: expandedIndex === index ? "1.5rem" : "1.25rem",
                 paddingBottom: expandedIndex === index ? "1.5rem" : "1.25rem",
               }}
@@ -115,7 +115,7 @@ export default function FAQSection() {
                     fontFamily: "var(--font-cormorant), serif",
                     fontSize: "1.3rem",
                     fontWeight: 400,
-                    color: "#f0ebe4",
+                    color: "#1a1a1a",
                     lineHeight: 1.3,
                     flex: 1,
                   }}
@@ -143,7 +143,7 @@ export default function FAQSection() {
                     fontFamily: "var(--font-inter), sans-serif",
                     fontSize: "0.95rem",
                     lineHeight: 1.8,
-                    color: "#9a9188",
+                    color: "#6b6b6b",
                     fontWeight: 300,
                     marginTop: "1rem",
                   }}
@@ -154,7 +154,7 @@ export default function FAQSection() {
             </div>
           ))}
           {/* Last border */}
-          <div style={{ borderTop: "1px solid #1e1e1e" }} />
+          <div style={{ borderTop: "1px solid #e0e0e0" }} />
         </div>
 
         {/* CTA */}
@@ -162,8 +162,8 @@ export default function FAQSection() {
           style={{
             marginTop: "4rem",
             padding: "3rem",
-            backgroundColor: "#141414",
-            border: "1px solid #2a2a2a",
+            backgroundColor: "#f0ede8",
+            border: "1px solid #d0d0d0",
             textAlign: "center",
           }}
         >
@@ -171,7 +171,7 @@ export default function FAQSection() {
             style={{
               fontFamily: "var(--font-inter), sans-serif",
               fontSize: "0.95rem",
-              color: "#9a9188",
+              color: "#6b6b6b",
               marginBottom: "1.5rem",
               fontWeight: 300,
             }}

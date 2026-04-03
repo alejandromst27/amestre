@@ -36,7 +36,7 @@ export default function ProcessSection() {
     <section
       id="process"
       style={{
-        backgroundColor: "#0a0a0a",
+        backgroundColor: "#faf8f5",
         padding: "8rem 2rem",
       }}
     >
@@ -59,7 +59,7 @@ export default function ProcessSection() {
               fontFamily: "var(--font-cormorant), serif",
               fontSize: "clamp(2.5rem, 5vw, 4rem)",
               fontWeight: 300,
-              color: "#f0ebe4",
+              color: "#1a1a1a",
               lineHeight: 1.1,
             }}
           >
@@ -77,7 +77,7 @@ export default function ProcessSection() {
                 gridTemplateColumns: "80px 1fr",
                 gap: "2rem",
                 padding: "2.5rem 0",
-                borderTop: "1px solid #1e1e1e",
+                borderTop: "1px solid #e0e0e0",
                 alignItems: "start",
               }}
             >
@@ -109,7 +109,7 @@ export default function ProcessSection() {
                     fontFamily: "var(--font-cormorant), serif",
                     fontSize: "1.6rem",
                     fontWeight: 400,
-                    color: "#f0ebe4",
+                    color: "#1a1a1a",
                     lineHeight: 1.2,
                   }}
                 >
@@ -120,7 +120,7 @@ export default function ProcessSection() {
                     fontFamily: "var(--font-inter), sans-serif",
                     fontSize: "0.9rem",
                     lineHeight: 1.8,
-                    color: "#9a9188",
+                    color: "#6b6b6b",
                     fontWeight: 300,
                   }}
                 >
@@ -130,7 +130,7 @@ export default function ProcessSection() {
             </div>
           ))}
           {/* Last border */}
-          <div style={{ borderTop: "1px solid #1e1e1e" }} />
+          <div style={{ borderTop: "1px solid #e0e0e0" }} />
         </div>
       </div>
 

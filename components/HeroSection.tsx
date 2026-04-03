@@ -12,7 +12,7 @@ export default function HeroSection() {
         justifyContent: "center",
         position: "relative",
         overflow: "hidden",
-        backgroundColor: "#0a0a0a",
+        backgroundColor: "#faf8f5",
       }}
     >
       {/* Subtle background lines */}
@@ -68,7 +68,7 @@ export default function HeroSection() {
             fontSize: "clamp(3rem, 8vw, 7rem)",
             fontWeight: 300,
             lineHeight: 1.05,
-            color: "#f0ebe4",
+            color: "#1a1a1a",
             marginBottom: "2rem",
             letterSpacing: "0.02em",
           }}
@@ -83,7 +83,7 @@ export default function HeroSection() {
             fontFamily: "var(--font-inter), sans-serif",
             fontSize: "1rem",
             lineHeight: 1.8,
-            color: "#9a9188",
+            color: "#6b6b6b",
             maxWidth: "520px",
             margin: "0 auto 3rem",
             fontWeight: 300,
@@ -117,8 +117,8 @@ export default function HeroSection() {
             href="#process"
             style={{
               padding: "1rem 2.5rem",
-              border: "1px solid #2a2a2a",
-              color: "#9a9188",
+              border: "1px solid #d0d0d0",
+              color: "#6b6b6b",
               textDecoration: "none",
               fontSize: "0.75rem",
               letterSpacing: "0.2em",
@@ -128,12 +128,12 @@ export default function HeroSection() {
               transition: "all 0.2s",
             }}
             onMouseEnter={(e) => {
-              e.currentTarget.style.borderColor = "#9a9188";
-              e.currentTarget.style.color = "#f0ebe4";
+              e.currentTarget.style.borderColor = "#6b6b6b";
+              e.currentTarget.style.color = "#1a1a1a";
             }}
             onMouseLeave={(e) => {
-              e.currentTarget.style.borderColor = "#2a2a2a";
-              e.currentTarget.style.color = "#9a9188";
+              e.currentTarget.style.borderColor = "#d0d0d0";
+              e.currentTarget.style.color = "#6b6b6b";
             }}
           >
             HOW IT WORKS
@@ -149,7 +149,7 @@ export default function HeroSection() {
           left: 0,
           right: 0,
           height: "120px",
-          background: "linear-gradient(to bottom, transparent, #0a0a0a)",
+          background: "linear-gradient(to bottom, transparent, #faf8f5)",
         }}
       />
     </section>

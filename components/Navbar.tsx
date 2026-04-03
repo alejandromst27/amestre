@@ -31,8 +31,8 @@ export default function Navbar() {
         left: 0,
         right: 0,
         zIndex: 50,
-        borderBottom: "1px solid #2a2a2a",
-        backgroundColor: "rgba(10,10,10,0.95)",
+        borderBottom: "1px solid #e0e0e0",
+        backgroundColor: "rgba(250,248,245,0.95)",
         backdropFilter: "blur(12px)",
       }}
     >
@@ -55,7 +55,7 @@ export default function Navbar() {
               fontSize: "1.6rem",
               fontWeight: 400,
               letterSpacing: "0.15em",
-              color: "#f0ebe4",
+              color: "#1a1a1a",
             }}
           >
             A.MESTRE
@@ -131,15 +131,15 @@ export default function Navbar() {
             background: "none",
             border: "none",
             cursor: "pointer",
-            color: "#f0ebe4",
+            color: "#1a1a1a",
             display: "none",
           }}
           className="mobile-menu-btn"
           aria-label="Toggle menu"
         >
-          <div style={{ width: "24px", height: "2px", background: "#f0ebe4", marginBottom: "5px" }} />
-          <div style={{ width: "24px", height: "2px", background: "#f0ebe4", marginBottom: "5px" }} />
-          <div style={{ width: "24px", height: "2px", background: "#f0ebe4" }} />
+          <div style={{ width: "24px", height: "2px", background: "#1a1a1a", marginBottom: "5px" }} />
+          <div style={{ width: "24px", height: "2px", background: "#1a1a1a", marginBottom: "5px" }} />
+          <div style={{ width: "24px", height: "2px", background: "#1a1a1a" }} />
         </button>
       </div>
 
@@ -147,8 +147,8 @@ export default function Navbar() {
       {menuOpen && (
         <div
           style={{
-            backgroundColor: "#0a0a0a",
-            borderTop: "1px solid #2a2a2a",
+            backgroundColor: "#faf8f5",
+            borderTop: "1px solid #e0e0e0",
             padding: "1.5rem 2rem",
             display: "flex",
             flexDirection: "column",
@@ -191,7 +191,7 @@ function NavLink({
       href={href}
       onClick={onClick}
       style={{
-        color: "#9a9188",
+        color: "#6b6b6b",
         textDecoration: "none",
         fontSize: "0.75rem",
         letterSpacing: "0.15em",
@@ -199,8 +199,8 @@ function NavLink({
         fontWeight: 400,
         transition: "color 0.2s",
       }}
-      onMouseEnter={(e) => (e.currentTarget.style.color = "#f0ebe4")}
-      onMouseLeave={(e) => (e.currentTarget.style.color = "#9a9188")}
+      onMouseEnter={(e) => (e.currentTarget.style.color = "#1a1a1a")}
+      onMouseLeave={(e) => (e.currentTarget.style.color = "#6b6b6b")}
     >
       {children}
     </a>
