@@ -18,6 +18,7 @@ export default function FAQSection() {
         borderTop: "1px solid #e0e0e0",
       }}
     >
+      {/* FAQSection - v2 */}
       <div style={{ maxWidth: "900px", margin: "0 auto" }}>
         {/* Header */}
         <div style={{ marginBottom: "4rem", maxWidth: "600px" }}>
