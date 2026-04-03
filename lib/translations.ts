@@ -1,15 +1,143 @@
-export const labels = {
+export const translations = {
   en: {
+    // Navbar
+    theProcess: "The Process",
+    customize: "Customize",
+    about: "About",
+    signIn: "SIGN IN",
+    myAccount: "MY ACCOUNT",
+
+    // Hero Section
+    heroEyebrow: "BESPOKE FOOTWEAR — BUILT FOR YOU",
+    heroHeadline: "Your Perfect Shoe Awaits",
+    heroSubheadline:
+      "From your foot scan to your perfect fit, every shoe is crafted around your unique measurements, your style, and your comfort.",
+    startYourJourney: "START YOUR JOURNEY",
+    howItWorks: "HOW IT WORKS",
+
+    // Process Section
+    processEyebrow: "THE PROCESS",
+    processHeadline: "Five steps to shoes that fit like no other",
+    step1Title: "Choose Your Style",
+    step1Desc:
+      "Browse our curated shoe collection. Tell us about your style, daily needs, and preferences — we match you with the perfect silhouette.",
+    step2Title: "Foot Scan",
+    step2Desc:
+      "Using your smartphone and our AI-powered app, snap a few photos of your foot. We capture your exact measurements with precision.",
+    step3Title: "Customize",
+    step3Desc:
+      "Select your materials, colors, heel height, toe shape, and sole type. Our craftsmen create a custom last (mold) designed specifically for your feet.",
+    step4Title: "Sample Fitting",
+    step4Desc:
+      "We send a sample shoe for your fitting. Consult with our master cobblers via video call or in person — every detail is perfected.",
+    step5Title: "Final Delivery",
+    step5Desc:
+      "Your bespoke shoes are handcrafted and delivered to your door. Shoes made entirely for your feet.",
+
+    // Customizer Section
+    customizeEyebrow: "MAKE IT YOURS",
+    customizeHeadline: "Your shoe, your way",
+    chooseStyle: "Choose Your Style",
+    selectSole: "Select Sole",
+    noCustomizationMsg: "This style comes in one bespoke version with no additional customization.",
+    customizerNote:
+      "Each shoe is handcrafted to your exact measurements. Our master cobblers will work with you to perfect every detail.",
+
+    // Shoe types and options
+    pennyLoafer: "Penny Loafer",
+    oxford: "Oxford Shoe",
+    espadrille: "Espadrille",
+    leatherSole: "Leather Sole",
+    rubberSole: "Rubber Sole",
+
+    // Coming Soon Card
+    comingSoonEyebrow: "COMING SOON",
+    tailoringHeadline: "Bespoke Tailoring",
+    tailoringDesc:
+      "Premium bespoke suits crafted to your exact measurements. Built with the same precision, care, and artistry as our custom shoes. Be the first to know when we launch.",
+    notifyMe: "NOTIFY ME",
+    thankYouMsg: "✓ Thank you! We'll notify you when tailoring launches.",
+
+    // FAQ
     frequentlyAsked: "FREQUENTLY ASKED",
     questionsAbout: "Questions about bespoke footwear",
     stillHaveQuestions: "Still have questions? We're here to help.",
     getInTouch: "GET IN TOUCH",
+
+    // Footer
+    craftsmen: "CRAFTSMEN",
+    portal: "Portal",
+    footerTagline: "Precision-crafted bespoke shoes",
   },
   es: {
+    // Navbar
+    theProcess: "El Proceso",
+    customize: "Personalizar",
+    about: "Acerca de",
+    signIn: "INICIAR SESIÓN",
+    myAccount: "MI CUENTA",
+
+    // Hero Section
+    heroEyebrow: "CALZADO HECHO A MEDIDA — HECHO PARA TI",
+    heroHeadline: "Tu Zapato Perfecto Te Espera",
+    heroSubheadline:
+      "Desde tu escaneo de pie hasta tu ajuste perfecto, cada zapato se crea en torno a tus medidas únicas, tu estilo y tu comodidad.",
+    startYourJourney: "COMIENZA TU VIAJE",
+    howItWorks: "CÓMO FUNCIONA",
+
+    // Process Section
+    processEyebrow: "EL PROCESO",
+    processHeadline: "Cinco pasos para zapatos que se ajustan como ninguno otro",
+    step1Title: "Elige Tu Estilo",
+    step1Desc:
+      "Explora nuestra colección de zapatos seleccionados. Cuéntanos sobre tu estilo, necesidades diarias y preferencias — te ayudamos a encontrar la silueta perfecta.",
+    step2Title: "Escaneo de Pie",
+    step2Desc:
+      "Usa tu smartphone y nuestra aplicación impulsada por IA para tomar algunas fotos de tu pie. Capturamos tus medidas exactas con precisión.",
+    step3Title: "Personalizar",
+    step3Desc:
+      "Selecciona tus materiales, colores, altura del tacón, forma del dedo y tipo de suela. Nuestros artesanos crean un molde personalizado diseñado específicamente para tus pies.",
+    step4Title: "Prueba de Muestra",
+    step4Desc:
+      "Te enviamos un zapato de muestra para probar. Consulta con nuestros maestros zapateros por videollamada o en persona — cada detalle es perfeccionado.",
+    step5Title: "Entrega Final",
+    step5Desc:
+      "Tus zapatos hechos a medida se fabrican a mano y se entregan en tu puerta. Zapatos hechos enteramente para tus pies.",
+
+    // Customizer Section
+    customizeEyebrow: "HAZLO TUYO",
+    customizeHeadline: "Tu zapato, a tu manera",
+    chooseStyle: "Elige Tu Estilo",
+    selectSole: "Selecciona Suela",
+    noCustomizationMsg: "Este estilo viene en una versión hecha a medida sin personalización adicional.",
+    customizerNote:
+      "Cada zapato se fabrica a mano según tus medidas exactas. Nuestros maestros zapateros trabajarán contigo para perfeccionar cada detalle.",
+
+    // Shoe types and options
+    pennyLoafer: "Penny Loafer",
+    oxford: "Oxford",
+    espadrille: "Espadrille",
+    leatherSole: "Suela de Cuero",
+    rubberSole: "Suela de Goma",
+
+    // Coming Soon Card
+    comingSoonEyebrow: "PRÓXIMAMENTE",
+    tailoringHeadline: "Sastrería Hecha a Medida",
+    tailoringDesc:
+      "Trajes premium hechos a medida para tus medidas exactas. Construidos con la misma precisión, cuidado y artesanía que nuestros zapatos personalizados. Sé el primero en saber cuándo lanzamos.",
+    notifyMe: "NOTIFÍCAME",
+    thankYouMsg: "✓ ¡Gracias! Te notificaremos cuando se lance la sastrería.",
+
+    // FAQ
     frequentlyAsked: "PREGUNTAS FRECUENTES",
     questionsAbout: "Preguntas sobre calzado hecho a medida",
     stillHaveQuestions: "¿Aún tienes preguntas? Estamos aquí para ayudarte.",
     getInTouch: "CONTÁCTANOS",
+
+    // Footer
+    craftsmen: "ARTESANOS",
+    portal: "Portal",
+    footerTagline: "Zapatos hechos a medida con precisión",
   },
 };
 
@@ -85,7 +213,7 @@ export const faqTranslations = {
     {
       question: "¿Cómo funciona el proceso hecho a medida?",
       answer:
-        "Después de tu escaneo de pie, creamos una forma personalizada (molde) basada en tus medidas exactas. Esta forma se convierte en el fundamento para fabricar tus zapatos. Luego producimos un zapato de muestra usando tu molde, te lo enviamos para probar, y recopilamos tus comentarios. Nuestros maestros zapateros hacen ajustes finales, y luego fabricamos tu par final usando ese molde personalizado.",
+        "Después de tu escaneo de pie, creamos un molde personalizado basado en tus medidas exactas. Este molde se convierte en el fundamento para fabricar tus zapatos. Luego producimos un zapato de muestra usando tu molde, te lo enviamos para probar, y recopilamos tus comentarios. Nuestros maestros zapateros hacen ajustes finales, y luego fabricamos tu par final usando ese molde personalizado.",
     },
     {
       question: "¿Cuánto tiempo toma todo el proceso?",

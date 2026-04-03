@@ -1,8 +1,13 @@
 "use client";
 
 import Link from "next/link";
+import { useLanguage } from "@/lib/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function HeroSection() {
+  const { language } = useLanguage();
+  const t = translations[language];
+
   return (
     <section
       style={{
@@ -58,7 +63,7 @@ export default function HeroSection() {
             fontWeight: 400,
           }}
         >
-          BESPOKE FOOTWEAR — BUILT FOR YOU
+          {t.heroEyebrow}
         </p>
 
         {/* Headline */}
@@ -73,8 +78,7 @@ export default function HeroSection() {
             letterSpacing: "0.02em",
           }}
         >
-          Your Perfect Shoe <br />
-          <em style={{ fontStyle: "italic", color: "#c9a96e" }}>Awaits</em>
+          {t.heroHeadline}
         </h1>
 
         {/* Subheadline */}
@@ -89,7 +93,7 @@ export default function HeroSection() {
             fontWeight: 300,
           }}
         >
-          From your foot scan to your perfect fit, every shoe is crafted around your unique measurements, your style, and your comfort.
+          {t.heroSubheadline}
         </p>
 
         {/* CTAs */}
@@ -111,7 +115,7 @@ export default function HeroSection() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e0c99a")}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c9a96e")}
           >
-            START YOUR JOURNEY
+            {t.startYourJourney}
           </Link>
           <a
             href="#process"
@@ -136,7 +140,7 @@ export default function HeroSection() {
               e.currentTarget.style.color = "#6b6b6b";
             }}
           >
-            HOW IT WORKS
+            {t.howItWorks}
           </a>
         </div>
       </div>

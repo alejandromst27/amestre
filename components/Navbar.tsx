@@ -4,12 +4,14 @@ import { useState, useEffect } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase-browser";
 import { useLanguage } from "@/lib/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [role, setRole] = useState<string | null>(null);
   const [loggedIn, setLoggedIn] = useState(false);
   const { language, setLanguage } = useLanguage();
+  const t = translations[language];
 
   useEffect(() => {
     const supabase = createClient();
@@ -69,9 +71,9 @@ export default function Navbar() {
           style={{ display: "flex", gap: "2.5rem", alignItems: "center" }}
           className="desktop-nav"
         >
-          <NavLink href="#process">The Process</NavLink>
-          <NavLink href="#customize">Customize</NavLink>
-          <NavLink href="#about">About</NavLink>
+          <NavLink href="#process">{t.theProcess}</NavLink>
+          <NavLink href="#customize">{t.customize}</NavLink>
+          <NavLink href="#about">{t.about}</NavLink>
 
           {/* Language Switcher */}
           <div style={{ display: "flex", gap: "0.5rem", alignItems: "center", borderLeft: "1px solid #d0d0d0", paddingLeft: "2.5rem" }}>
@@ -137,7 +139,7 @@ export default function Navbar() {
                 e.currentTarget.style.color = "#c9a96e";
               }}
             >
-              MY ACCOUNT
+              {t.myAccount}
             </Link>
           ) : (
             <Link
@@ -162,7 +164,7 @@ export default function Navbar() {
                 e.currentTarget.style.color = "#c9a96e";
               }}
             >
-              SIGN IN
+              {t.signIn}
             </Link>
           )}
         </div>
@@ -198,14 +200,14 @@ export default function Navbar() {
             gap: "1.25rem",
           }}
         >
-          <NavLink href="#process" onClick={() => setMenuOpen(false)}>The Process</NavLink>
-          <NavLink href="#customize" onClick={() => setMenuOpen(false)}>Customize</NavLink>
-          <NavLink href="#about" onClick={() => setMenuOpen(false)}>About</NavLink>
+          <NavLink href="#process" onClick={() => setMenuOpen(false)}>{t.theProcess}</NavLink>
+          <NavLink href="#customize" onClick={() => setMenuOpen(false)}>{t.customize}</NavLink>
+          <NavLink href="#about" onClick={() => setMenuOpen(false)}>{t.about}</NavLink>
           <Link
             href={loggedIn ? "/dashboard" : "/login"}
             style={{ color: "#c9a96e", textDecoration: "none", fontSize: "0.8rem", letterSpacing: "0.15em" }}
           >
-            {loggedIn ? "MY ACCOUNT" : "SIGN IN"}
+            {loggedIn ? t.myAccount : t.signIn}
           </Link>
         </div>
       )}

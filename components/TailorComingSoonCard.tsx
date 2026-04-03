@@ -1,10 +1,14 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/lib/LanguageContext";
+import { translations } from "@/lib/translations";
 
 export default function TailorComingSoonCard() {
   const [email, setEmail] = useState("");
   const [submitted, setSubmitted] = useState(false);
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
@@ -46,7 +50,7 @@ export default function TailorComingSoonCard() {
               marginBottom: "1.5rem",
             }}
           >
-            COMING SOON
+            {t.comingSoonEyebrow}
           </span>
 
           {/* Headline */}
@@ -60,7 +64,7 @@ export default function TailorComingSoonCard() {
               marginBottom: "1rem",
             }}
           >
-            Bespoke Tailoring
+            {t.tailoringHeadline}
           </h2>
 
           {/* Description */}
@@ -75,7 +79,7 @@ export default function TailorComingSoonCard() {
               fontWeight: 300,
             }}
           >
-            Premium bespoke suits crafted to your exact measurements. Built with the same precision, care, and artistry as our custom shoes. Be the first to know when we launch.
+            {t.tailoringDesc}
           </p>
 
           {/* Waitlist form */}
@@ -116,7 +120,7 @@ export default function TailorComingSoonCard() {
               onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e0c99a")}
               onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c9a96e")}
             >
-              NOTIFY ME
+              {t.notifyMe}
             </button>
           </form>
 
@@ -130,7 +134,7 @@ export default function TailorComingSoonCard() {
                 fontWeight: 300,
               }}
             >
-              ✓ Thank you! We'll notify you when tailoring launches.
+              {t.thankYouMsg}
             </p>
           )}
         </div>

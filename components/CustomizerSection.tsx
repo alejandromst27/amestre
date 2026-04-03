@@ -1,6 +1,8 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/lib/LanguageContext";
+import { translations } from "@/lib/translations";
 
 const shoeTypes = [
   {
@@ -34,6 +36,8 @@ const soleOptions = [
 export default function CustomizerSection() {
   const [selectedShoe, setSelectedShoe] = useState("penny-loafer");
   const [selectedSole, setSelectedSole] = useState("leather");
+  const { language } = useLanguage();
+  const t = translations[language];
 
   const currentShoe = shoeTypes.find((s) => s.id === selectedShoe)!;
   const isCustomizable = currentShoe.customizable;
@@ -59,7 +63,7 @@ export default function CustomizerSection() {
               fontFamily: "var(--font-inter), sans-serif",
             }}
           >
-            MAKE IT YOURS
+            {t.customizeEyebrow}
           </p>
           <h2
             style={{
@@ -70,7 +74,7 @@ export default function CustomizerSection() {
               lineHeight: 1.1,
             }}
           >
-            Your shoe, your way
+            {t.customizeHeadline}
           </h2>
         </div>
 
@@ -152,7 +156,7 @@ export default function CustomizerSection() {
                   letterSpacing: "0.05em",
                 }}
               >
-                Choose Your Style
+                {t.chooseStyle}
               </h3>
               {shoeTypes.map((shoe) => {
                 const isSelected = selectedShoe === shoe.id;
@@ -220,7 +224,7 @@ export default function CustomizerSection() {
                     letterSpacing: "0.05em",
                   }}
                 >
-                  Select Sole
+                  {t.selectSole}
                 </h3>
                 {soleOptions.map((sole) => {
                   const isSelected = selectedSole === sole.id;
@@ -292,7 +296,7 @@ export default function CustomizerSection() {
                     fontWeight: 300,
                   }}
                 >
-                  This style comes in one bespoke version with no additional customization.
+                  {t.noCustomizationMsg}
                 </p>
               </div>
             )}
@@ -306,7 +310,7 @@ export default function CustomizerSection() {
                 fontWeight: 300,
               }}
             >
-              Each shoe is handcrafted to your exact measurements. Our master cobblers will work with you to perfect every detail.
+              {t.customizerNote}
             </p>
           </div>
         </div>

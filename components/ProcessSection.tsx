@@ -1,37 +1,41 @@
-const steps = [
-  {
-    number: "01",
-    title: "Choose Your Style",
-    description:
-      "Browse our curated shoe collection. Tell us about your style, daily needs, and preferences — we match you with the perfect silhouette.",
-  },
-  {
-    number: "02",
-    title: "Foot Scan",
-    description:
-      "Using your smartphone and our AI-powered app, snap a few photos of your foot. We capture your exact measurements with precision.",
-  },
-  {
-    number: "03",
-    title: "Customize",
-    description:
-      "Select your materials, colors, heel height, toe shape, and sole type. Our craftsmen create a custom last (mold) designed specifically for your feet.",
-  },
-  {
-    number: "04",
-    title: "Sample Fitting",
-    description:
-      "We send a sample shoe for your fitting. Consult with our master cobblers via video call or in person — every detail is perfected.",
-  },
-  {
-    number: "05",
-    title: "Final Delivery",
-    description:
-      "Your bespoke shoes are handcrafted and delivered to your door. Shoes made entirely for your feet.",
-  },
-];
+import { useLanguage } from "@/lib/LanguageContext";
+import { translations } from "@/lib/translations";
+
+function getSteps(t: typeof translations.en) {
+  return [
+    {
+      number: "01",
+      title: t.step1Title,
+      description: t.step1Desc,
+    },
+    {
+      number: "02",
+      title: t.step2Title,
+      description: t.step2Desc,
+    },
+    {
+      number: "03",
+      title: t.step3Title,
+      description: t.step3Desc,
+    },
+    {
+      number: "04",
+      title: t.step4Title,
+      description: t.step4Desc,
+    },
+    {
+      number: "05",
+      title: t.step5Title,
+      description: t.step5Desc,
+    },
+  ];
+}
 
 export default function ProcessSection() {
+  const { language } = useLanguage();
+  const t = translations[language];
+  const steps = getSteps(t);
+
   return (
     <section
       id="process"
@@ -52,7 +56,7 @@ export default function ProcessSection() {
               fontFamily: "var(--font-inter), sans-serif",
             }}
           >
-            THE PROCESS
+            {t.processEyebrow}
           </p>
           <h2
             style={{
@@ -63,7 +67,7 @@ export default function ProcessSection() {
               lineHeight: 1.1,
             }}
           >
-            Five steps to shoes that fit like no other
+            {t.processHeadline}
           </h2>
         </div>
 
