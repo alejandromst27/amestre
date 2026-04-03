@@ -200,22 +200,7 @@ export const faqTranslations = {
     {
       question: "How long does the entire process take?",
       answer:
-        "From foot scan to final delivery typically takes 6-8 weeks. This includes: customization consultation (1-2 weeks), custom last creation (1 week), initial sample production (2-3 weeks), sample fitting and adjustments (1 week), and final production and delivery (1-2 weeks).",
-    },
-    {
-      question: "What materials are available?",
-      answer:
-        "We work with premium materials sourced from trusted suppliers in Italy and Spain. For Penny Loafers, choose from black satin leather, grain black leather, or brown suade. For Oxfords, we offer black calf leather. For Espadrilles, select between black suade or brown suade. Each material is selected for its quality, durability, and aesthetic beauty.",
-    },
-    {
-      question: "What if the fit isn't perfect after the sample?",
-      answer:
-        "We stand behind our craftsmanship. If adjustments are needed after the sample fitting, we'll refine your custom last before creating your final pair. Since we've created a unique mold specifically for your feet, future pairs will maintain the same exceptional fit with minimal adjustments.",
-    },
-    {
-      question: "How much do bespoke shoes typically cost?",
-      answer:
-        "Bespoke shoes start at $1,200 and can go higher depending on materials and customization. Made-to-measure options start at $800. Each pair is handcrafted by master cobblers, which reflects in the price and exceptional quality. We believe this investment creates shoes that last decades.",
+        "From foot scan to final delivery, the entire process takes 4 to 5 weeks. This includes creating your custom last, crafting your pair by hand, and shipping to your door.",
     },
   ],
   es: [
@@ -240,24 +225,9 @@ export const faqTranslations = {
         "Tras el escaneo de tu pie, creamos una horma personalizada basada en tus medidas exactas. Esa horma es la base sobre la que nuestros maestros zapateros construyen tu par final, garantizando un ajuste preciso desde el primer momento.",
     },
     {
-      question: "¿Cuánto tiempo toma todo el proceso?",
+      question: "¿Cuánto tiempo tarda todo el proceso?",
       answer:
-        "Desde el escaneo del pie hasta la entrega final normalmente toma 6-8 semanas. Esto incluye: consulta de personalización (1-2 semanas), creación de molde personalizado (1 semana), producción inicial de muestra (2-3 semanas), prueba de muestra y ajustes (1 semana), y producción y entrega final (1-2 semanas).",
-    },
-    {
-      question: "¿Qué materiales están disponibles?",
-      answer:
-        "Trabajamos con materiales premium obtenidos de proveedores confiables en Italia y España. Para Penny Loafers, elige entre cuero satinado negro, cuero grano negro o gamuza marrón. Para Oxfords, ofrecemos cuero de becerro negro. Para Espadrilles, selecciona entre gamuza negra o gamuza marrón. Cada material se selecciona por su calidad, durabilidad y belleza estética.",
-    },
-    {
-      question: "¿Y si el ajuste no es perfecto después de la muestra?",
-      answer:
-        "Respaldamos nuestra artesanía. Si se necesitan ajustes después de la prueba de muestra, refinaremos tu molde personalizado antes de crear tu par final. Como hemos creado un molde único específicamente para tus pies, los pares futuros mantendrán el mismo ajuste excepcional con ajustes mínimos.",
-    },
-    {
-      question: "¿Cuánto cuestan típicamente los zapatos hechos a medida?",
-      answer:
-        "Los zapatos hechos a medida comienzan en $1,200 y pueden ser más altos según los materiales y la personalización. Las opciones hecho a medida comienzan en $800. Cada par se fabrica a mano por maestros zapateros, lo cual se refleja en el precio y la calidad excepcional. Creemos que esta inversión crea zapatos que duran décadas.",
+        "Desde el escaneo de tu pie hasta la entrega, el proceso completo toma entre 4 y 5 semanas. Esto incluye la creación de tu horma personalizada, la fabricación artesanal de tu par y el envío a tu domicilio.",
     },
   ],
 };
