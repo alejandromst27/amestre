@@ -24,9 +24,9 @@ export const translations = {
     step2Title: "Foot Scan",
     step2Desc:
       "Using your smartphone and our AI-powered app, snap a few photos of your foot. We capture your exact measurements with precision.",
-    step3Title: "Customize",
+    step3Title: "Material Selection",
     step3Desc:
-      "Select your materials, colors, heel height, toe shape, and sole type. Our craftsmen create a custom last (mold) designed specifically for your feet.",
+      "Choose your preferred material and color for your selected shoe model. Our craftsmen create a custom last (mold) designed specifically for your feet.",
     step4Title: "Sample Fitting",
     step4Desc:
       "We send a sample shoe for your fitting. Consult with our master cobblers via video call or in person — every detail is perfected.",
@@ -94,9 +94,9 @@ export const translations = {
     step2Title: "Escaneo de Pie",
     step2Desc:
       "Usa tu smartphone y nuestra aplicación impulsada por IA para tomar algunas fotos de tu pie. Capturamos tus medidas exactas con precisión.",
-    step3Title: "Personalizar",
+    step3Title: "Selección de Material",
     step3Desc:
-      "Selecciona tus materiales, colores, altura del tacón, forma del dedo y tipo de suela. Nuestros artesanos crean un molde personalizado diseñado específicamente para tus pies.",
+      "Elige tu material y color preferidos para tu modelo de zapato seleccionado. Nuestros artesanos crean un molde personalizado diseñado específicamente para tus pies.",
     step4Title: "Prueba de Muestra",
     step4Desc:
       "Te enviamos un zapato de muestra para probar. Consulta con nuestros maestros zapateros por videollamada o en persona — cada detalle es perfeccionado.",
@@ -146,7 +146,7 @@ export const faqTranslations = {
     {
       question: "What makes A.MESTRE shoes different?",
       answer:
-        "Our shoes combine beautifully designed silhouettes with precision-fit technology. We start with three expertly designed styles—Penny Loafer, Oxford, and Espadrille—and then customize each pair to your exact foot measurements using AI-powered scanning. The result is a perfectly fitting shoe that's crafted just for you.",
+        "Our shoes combine beautifully designed silhouettes with precision-fit technology. We start with three expertly designed styles—Penny Loafer, Oxford, and Espadrille—each available in carefully selected materials and colors. Then we customize each pair to your exact foot measurements using AI-powered scanning. The result is a perfectly fitting shoe that's crafted just for you.",
     },
     {
       question: "How does the AI foot scanning work?",
@@ -159,9 +159,9 @@ export const faqTranslations = {
         "You'll need to take 3 photos: top view, lateral view (inside), and lateral view (outside) of your foot. We recommend natural lighting and having a standard A4 sheet nearby as a reference. The process takes about 2-3 minutes and can be done from your phone.",
     },
     {
-      question: "What styles are available?",
+      question: "What styles and materials are available?",
       answer:
-        "We offer three beautifully designed shoe styles, each A.MESTRE's interpretation of a classic: Penny Loafer, Oxford, and Espadrille. The designs are fixed—our value comes from making them perfectly fit YOUR feet. For Penny Loafers and Oxfords, you can choose between a leather sole or rubber sole. Espadrilles come as-is in our signature design.",
+        "We offer three beautifully designed shoe styles, each A.MESTRE's interpretation of a classic: Penny Loafer, Oxford, and Espadrille. Each style comes in carefully selected materials and colors. Penny Loafers are available in black satin leather, grain black leather, and brown suade. Oxfords come in black calf leather. Espadrilles are available in black suade and brown suade. The designs are fixed—our value comes from making them perfectly fit YOUR feet.",
     },
     {
       question: "How does the made-to-measure process work?",
@@ -176,7 +176,7 @@ export const faqTranslations = {
     {
       question: "What materials are available?",
       answer:
-        "We work with premium materials for the uppers, including full-grain leather and suede. For soles, you can choose traditional leather (elegant, develops a beautiful patina) or durable rubber (practical, long-lasting). All materials are sourced from trusted suppliers in Italy and Spain.",
+        "We work with premium materials sourced from trusted suppliers in Italy and Spain. For Penny Loafers, choose from black satin leather, grain black leather, or brown suade. For Oxfords, we offer black calf leather. For Espadrilles, select between black suade or brown suade. Each material is selected for its quality, durability, and aesthetic beauty.",
     },
     {
       question: "What if the fit isn't perfect after the sample?",
@@ -193,7 +193,7 @@ export const faqTranslations = {
     {
       question: "¿Qué hace que los zapatos A.MESTRE sean diferentes?",
       answer:
-        "Nuestros zapatos combinan siluetas bellamente diseñadas con tecnología de ajuste de precisión. Comenzamos con tres estilos expertamente diseñados—Penny Loafer, Oxford y Espadrille—y luego personalizamos cada par según tus medidas exactas de pie usando escaneo impulsado por IA. El resultado es un zapato perfectamente ajustado que se crea solo para ti.",
+        "Nuestros zapatos combinan siluetas bellamente diseñadas con tecnología de ajuste de precisión. Comenzamos con tres estilos expertamente diseñados—Penny Loafer, Oxford y Espadrille—cada uno disponible en materiales y colores cuidadosamente seleccionados. Luego personalizamos cada par según tus medidas exactas de pie usando escaneo impulsado por IA. El resultado es un zapato perfectamente ajustado que se crea solo para ti.",
     },
     {
       question: "¿Cómo funciona el escaneo de pie con IA?",
@@ -206,9 +206,9 @@ export const faqTranslations = {
         "Necesitarás tomar 3 fotos: vista superior, vista lateral (interior) y vista lateral (exterior) de tu pie. Recomendamos iluminación natural y tener una hoja A4 estándar cerca como referencia. El proceso toma aproximadamente 2-3 minutos y se puede hacer desde tu teléfono.",
     },
     {
-      question: "¿Qué estilos están disponibles?",
+      question: "¿Qué estilos y materiales están disponibles?",
       answer:
-        "Ofrecemos tres estilos de zapatos bellamente diseñados, cada uno es la interpretación de A.MESTRE de un clásico: Penny Loafer, Oxford y Espadrille. Los diseños son fijos—nuestro valor proviene de hacerlos ajustarse perfectamente a TUS pies. Para Penny Loafers y Oxfords, puedes elegir entre una suela de cuero o suela de goma. Las Espadrilles vienen en nuestro diseño de firma.",
+        "Ofrecemos tres estilos de zapatos bellamente diseñados, cada uno es la interpretación de A.MESTRE de un clásico: Penny Loafer, Oxford y Espadrille. Cada estilo viene en materiales y colores cuidadosamente seleccionados. Los Penny Loafers están disponibles en cuero satinado negro, cuero grano negro y gamuza marrón. Los Oxfords vienen en cuero de becerro negro. Las Espadrilles están disponibles en gamuza negra y gamuza marrón. Los diseños son fijos—nuestro valor proviene de hacerlos ajustarse perfectamente a TUS pies.",
     },
     {
       question: "¿Cómo funciona el proceso hecho a medida?",
@@ -223,7 +223,7 @@ export const faqTranslations = {
     {
       question: "¿Qué materiales están disponibles?",
       answer:
-        "Trabajamos con materiales premium para las partes superiores, incluyendo cuero de grano completo y gamuza. Para las suelas, puedes elegir cuero tradicional (elegante, desarrolla una pátina hermosa) o goma duradera (práctica, duradera). Todos los materiales se obtienen de proveedores confiables en Italia y España.",
+        "Trabajamos con materiales premium obtenidos de proveedores confiables en Italia y España. Para Penny Loafers, elige entre cuero satinado negro, cuero grano negro o gamuza marrón. Para Oxfords, ofrecemos cuero de becerro negro. Para Espadrilles, selecciona entre gamuza negra o gamuza marrón. Cada material se selecciona por su calidad, durabilidad y belleza estética.",
     },
     {
       question: "¿Y si el ajuste no es perfecto después de la muestra?",

@@ -10,37 +10,47 @@ const shoeTypes = [
     label: "Penny Loafer",
     description: "Timeless classic with a sleek silhouette",
     image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
-    customizable: true,
+    materials: [
+      { id: "black-satin", label: "Black Satin Leather", description: "Elegant and refined" },
+      { id: "grain-black", label: "Grain Black Leather", description: "Textured and sophisticated" },
+      { id: "brown-suade", label: "Brown Suade", description: "Warm and versatile" },
+    ],
   },
   {
     id: "oxford",
     label: "Oxford Shoe",
     description: "Elegant and formal, perfect for any occasion",
     image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
-    customizable: true,
+    materials: [
+      { id: "black-calf", label: "Black Calf Leather", description: "Premium and timeless" },
+    ],
   },
   {
     id: "espadrille",
     label: "Espadrille",
     description: "Casual and comfortable, perfect for summer",
     image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
-    customizable: false,
+    materials: [
+      { id: "black-suade", label: "Black Suade", description: "Classic and elegant" },
+      { id: "brown-suade", label: "Brown Suade", description: "Warm and natural" },
+    ],
   },
-];
-
-const soleOptions = [
-  { id: "leather", label: "Leather Sole", description: "Traditional and premium" },
-  { id: "rubber", label: "Rubber Sole", description: "Durable and practical" },
 ];
 
 export default function CustomizerSection() {
   const [selectedShoe, setSelectedShoe] = useState("penny-loafer");
-  const [selectedSole, setSelectedSole] = useState("leather");
+  const [selectedMaterial, setSelectedMaterial] = useState("black-satin");
   const { language } = useLanguage();
   const t = translations[language];
 
   const currentShoe = shoeTypes.find((s) => s.id === selectedShoe)!;
-  const isCustomizable = currentShoe.customizable;
+
+  // Reset material when shoe changes
+  const handleShoeChange = (shoeId: string) => {
+    setSelectedShoe(shoeId);
+    const shoe = shoeTypes.find((s) => s.id === shoeId)!;
+    setSelectedMaterial(shoe.materials[0].id);
+  };
 
   return (
     <section
@@ -133,12 +143,8 @@ export default function CustomizerSection() {
                 }}
               >
                 {currentShoe.label}
-                {isCustomizable && selectedSole && (
-                  <>
-                    {" "}·{" "}
-                    {soleOptions.find((s) => s.id === selectedSole)?.label}
-                  </>
-                )}
+                {" "}·{" "}
+                {currentShoe.materials.find((m) => m.id === selectedMaterial)?.label}
               </p>
             </div>
           </div>
@@ -163,7 +169,7 @@ export default function CustomizerSection() {
                 return (
                   <button
                     key={shoe.id}
-                    onClick={() => setSelectedShoe(shoe.id)}
+                    onClick={() => handleShoeChange(shoe.id)}
                     style={{
                       padding: "1.25rem 1.5rem",
                       background: isSelected ? "#f0ede8" : "transparent",
@@ -212,26 +218,25 @@ export default function CustomizerSection() {
               })}
             </div>
 
-            {/* Sole Selection - Only for customizable shoes */}
-            {isCustomizable ? (
-              <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
-                <h3
-                  style={{
-                    fontFamily: "var(--font-cormorant), serif",
-                    fontSize: "1rem",
-                    color: "#1a1a1a",
-                    marginBottom: "0.5rem",
-                    letterSpacing: "0.05em",
-                  }}
-                >
-                  {t.selectSole}
-                </h3>
-                {soleOptions.map((sole) => {
-                  const isSelected = selectedSole === sole.id;
-                  return (
-                    <button
-                      key={sole.id}
-                      onClick={() => setSelectedSole(sole.id)}
+            {/* Material Selection */}
+            <div style={{ display: "flex", flexDirection: "column", gap: "0.75rem" }}>
+              <h3
+                style={{
+                  fontFamily: "var(--font-cormorant), serif",
+                  fontSize: "1rem",
+                  color: "#1a1a1a",
+                  marginBottom: "0.5rem",
+                  letterSpacing: "0.05em",
+                }}
+              >
+                Select Material
+              </h3>
+              {currentShoe.materials.map((material) => {
+                const isSelected = selectedMaterial === material.id;
+                return (
+                  <button
+                    key={material.id}
+                    onClick={() => setSelectedMaterial(material.id)}
                       style={{
                         padding: "1.25rem 1.5rem",
                         background: isSelected ? "#f0ede8" : "transparent",
@@ -259,7 +264,7 @@ export default function CustomizerSection() {
                             marginBottom: "0.2rem",
                           }}
                         >
-                          {sole.label}
+                          {material.label}
                         </p>
                         <p
                           style={{
@@ -269,7 +274,7 @@ export default function CustomizerSection() {
                             fontWeight: 300,
                           }}
                         >
-                          {sole.description}
+                          {material.description}
                         </p>
                       </div>
                       {isSelected && (
@@ -278,28 +283,7 @@ export default function CustomizerSection() {
                     </button>
                   );
                 })}
-              </div>
-            ) : (
-              <div
-                style={{
-                  padding: "1.5rem",
-                  backgroundColor: "#f0ede8",
-                  border: "1px solid #d0d0d0",
-                  textAlign: "center",
-                }}
-              >
-                <p
-                  style={{
-                    fontFamily: "var(--font-inter), sans-serif",
-                    fontSize: "0.9rem",
-                    color: "#6b6b6b",
-                    fontWeight: 300,
-                  }}
-                >
-                  {t.noCustomizationMsg}
-                </p>
-              </div>
-            )}
+            </div>
 
             <p
               style={{
@@ -310,7 +294,7 @@ export default function CustomizerSection() {
                 fontWeight: 300,
               }}
             >
-              {t.customizerNote}
+              Each shoe is handcrafted to your exact measurements. The design is fixed—the customization comes from the perfect fit to your feet and your choice of material.
             </p>
           </div>
         </div>
