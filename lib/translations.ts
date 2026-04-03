@@ -11,7 +11,7 @@ export const translations = {
     heroEyebrow: "BESPOKE FOOTWEAR — BUILT FOR YOU",
     heroHeadline: "Your Perfect Shoe Awaits",
     heroSubheadline:
-      "From your foot scan to your perfect fit, every shoe is crafted around your unique measurements, your style, and your comfort.",
+      "From your foot scan to your perfect fit, every shoe is crafted around your unique measurements and your comfort.",
     startYourJourney: "START YOUR JOURNEY",
     howItWorks: "HOW IT WORKS",
 
@@ -95,7 +95,7 @@ export const translations = {
     heroEyebrow: "CALZADO HECHO A MEDIDA — HECHO PARA TI",
     heroHeadline: "Tu Zapato Perfecto Te Espera",
     heroSubheadline:
-      "Desde tu escaneo de pie hasta tu ajuste perfecto, cada zapato se crea en torno a tus medidas únicas, tu estilo y tu comodidad.",
+      "Desde tu escaneo de pie hasta tu ajuste perfecto, cada zapato se crea en torno a tus medidas únicas y tu comodidad.",
     startYourJourney: "COMIENZA TU VIAJE",
     howItWorks: "CÓMO FUNCIONA",
 
