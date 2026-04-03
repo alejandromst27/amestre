@@ -59,7 +59,7 @@ export const translations = {
     blackCalfDesc: "Premium and timeless",
     blackSuade: "Black Suade",
     blackSuadeDesc: "Classic and elegant",
-    brownSuadeDesc: "Warm and natural",
+    brownSuadeEspadrilleDesc: "Warm and natural",
 
     leatherSole: "Leather Sole",
     rubberSole: "Rubber Sole",
@@ -143,7 +143,7 @@ export const translations = {
     blackCalfDesc: "Premium y atemporal",
     blackSuade: "Gamuza Negra",
     blackSuadeDesc: "Clásico y elegante",
-    brownSuadeDesc: "Cálido y natural",
+    brownSuadeEspadrilleDesc: "Cálido y natural",
 
     leatherSole: "Suela de Cuero",
     rubberSole: "Suela de Goma",

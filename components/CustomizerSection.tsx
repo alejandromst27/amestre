@@ -33,7 +33,7 @@ function getShoeTypes(t: typeof translations.en) {
       image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
       materials: [
         { id: "black-suade", labelKey: "blackSuade", descriptionKey: "blackSuadeDesc" },
-        { id: "brown-suade", labelKey: "brownSuade", descriptionKey: "brownSuadeDesc" },
+        { id: "brown-suade", labelKey: "brownSuade", descriptionKey: "brownSuadeEspadrilleDesc" },
       ],
     },
   ];
