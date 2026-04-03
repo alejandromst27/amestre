@@ -17,7 +17,7 @@ export const translations = {
 
     // Process Section
     processEyebrow: "THE PROCESS",
-    processHeadline: "Five steps to shoes that fit like no other",
+    processHeadline: "Four steps to shoes that fit like no other",
     step1Title: "Choose Your Style",
     step1Desc:
       "Browse our curated shoe collection. Tell us about your style, daily needs, and preferences — we match you with the perfect silhouette.",
@@ -27,12 +27,9 @@ export const translations = {
     step3Title: "Material Selection",
     step3Desc:
       "Choose your preferred material and color for your selected shoe model. Our craftsmen create a custom last (mold) designed specifically for your feet.",
-    step4Title: "Sample Fitting",
+    step4Title: "Final Delivery",
     step4Desc:
-      "We send a sample shoe for your fitting. Consult with our master cobblers via video call or in person — every detail is perfected.",
-    step5Title: "Final Delivery",
-    step5Desc:
-      "Your bespoke shoes are handcrafted and delivered to your door. Shoes made entirely for your feet.",
+      "Your bespoke shoes are handcrafted and delivered directly to your door. Shoes made entirely for your feet.",
 
     // Customizer Section
     customizeEyebrow: "MAKE IT YOURS",
@@ -45,8 +42,25 @@ export const translations = {
 
     // Shoe types and options
     pennyLoafer: "Penny Loafer",
+    pennyLoaferDesc: "Timeless classic with a sleek silhouette",
     oxford: "Oxford Shoe",
+    oxfordDesc: "Elegant and formal, perfect for any occasion",
     espadrille: "Espadrille",
+    espadrilleDesc: "Casual and comfortable, perfect for summer",
+
+    // Material options
+    blackSatinLeather: "Black Satin Leather",
+    blackSatinDesc: "Elegant and refined",
+    grainBlackLeather: "Grain Black Leather",
+    grainBlackDesc: "Textured and sophisticated",
+    brownSuade: "Brown Suade",
+    brownSuadeDesc: "Warm and versatile",
+    blackCalfLeather: "Black Calf Leather",
+    blackCalfDesc: "Premium and timeless",
+    blackSuade: "Black Suade",
+    blackSuadeDesc: "Classic and elegant",
+    brownSuadeDesc: "Warm and natural",
+
     leatherSole: "Leather Sole",
     rubberSole: "Rubber Sole",
 
@@ -87,7 +101,7 @@ export const translations = {
 
     // Process Section
     processEyebrow: "EL PROCESO",
-    processHeadline: "Cinco pasos para zapatos que se ajustan como ninguno otro",
+    processHeadline: "Cuatro pasos para zapatos que se ajustan como ninguno otro",
     step1Title: "Elige Tu Estilo",
     step1Desc:
       "Explora nuestra colección de zapatos seleccionados. Cuéntanos sobre tu estilo, necesidades diarias y preferencias — te ayudamos a encontrar la silueta perfecta.",
@@ -97,12 +111,9 @@ export const translations = {
     step3Title: "Selección de Material",
     step3Desc:
       "Elige tu material y color preferidos para tu modelo de zapato seleccionado. Nuestros artesanos crean un molde personalizado diseñado específicamente para tus pies.",
-    step4Title: "Prueba de Muestra",
+    step4Title: "Entrega Final",
     step4Desc:
-      "Te enviamos un zapato de muestra para probar. Consulta con nuestros maestros zapateros por videollamada o en persona — cada detalle es perfeccionado.",
-    step5Title: "Entrega Final",
-    step5Desc:
-      "Tus zapatos hechos a medida se fabrican a mano y se entregan en tu puerta. Zapatos hechos enteramente para tus pies.",
+      "Tus zapatos hechos a medida se fabrican a mano y se entregan directamente en tu puerta. Zapatos hechos enteramente para tus pies.",
 
     // Customizer Section
     customizeEyebrow: "HAZLO TUYO",
@@ -115,8 +126,25 @@ export const translations = {
 
     // Shoe types and options
     pennyLoafer: "Penny Loafer",
+    pennyLoaferDesc: "Clásico atemporal con una silueta elegante",
     oxford: "Oxford",
+    oxfordDesc: "Elegante y formal, perfecto para cualquier ocasión",
     espadrille: "Espadrille",
+    espadrilleDesc: "Casual y cómodo, perfecto para el verano",
+
+    // Material options
+    blackSatinLeather: "Cuero Satinado Negro",
+    blackSatinDesc: "Elegante y refinado",
+    grainBlackLeather: "Cuero Grano Negro",
+    grainBlackDesc: "Texturizado y sofisticado",
+    brownSuade: "Gamuza Marrón",
+    brownSuadeDesc: "Cálido y versátil",
+    blackCalfLeather: "Cuero de Becerro Negro",
+    blackCalfDesc: "Premium y atemporal",
+    blackSuade: "Gamuza Negra",
+    blackSuadeDesc: "Clásico y elegante",
+    brownSuadeDesc: "Cálido y natural",
+
     leatherSole: "Suela de Cuero",
     rubberSole: "Suela de Goma",
 

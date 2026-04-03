@@ -4,44 +4,47 @@ import { useState } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
 import { translations } from "@/lib/translations";
 
-const shoeTypes = [
-  {
-    id: "penny-loafer",
-    label: "Penny Loafer",
-    description: "Timeless classic with a sleek silhouette",
-    image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
-    materials: [
-      { id: "black-satin", label: "Black Satin Leather", description: "Elegant and refined" },
-      { id: "grain-black", label: "Grain Black Leather", description: "Textured and sophisticated" },
-      { id: "brown-suade", label: "Brown Suade", description: "Warm and versatile" },
-    ],
-  },
-  {
-    id: "oxford",
-    label: "Oxford Shoe",
-    description: "Elegant and formal, perfect for any occasion",
-    image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
-    materials: [
-      { id: "black-calf", label: "Black Calf Leather", description: "Premium and timeless" },
-    ],
-  },
-  {
-    id: "espadrille",
-    label: "Espadrille",
-    description: "Casual and comfortable, perfect for summer",
-    image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
-    materials: [
-      { id: "black-suade", label: "Black Suade", description: "Classic and elegant" },
-      { id: "brown-suade", label: "Brown Suade", description: "Warm and natural" },
-    ],
-  },
-];
+function getShoeTypes(t: typeof translations.en) {
+  return [
+    {
+      id: "penny-loafer",
+      label: t.pennyLoafer,
+      descriptionKey: "pennyLoaferDesc",
+      image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
+      materials: [
+        { id: "black-satin", labelKey: "blackSatinLeather", descriptionKey: "blackSatinDesc" },
+        { id: "grain-black", labelKey: "grainBlackLeather", descriptionKey: "grainBlackDesc" },
+        { id: "brown-suade", labelKey: "brownSuade", descriptionKey: "brownSuadeDesc" },
+      ],
+    },
+    {
+      id: "oxford",
+      label: t.oxford,
+      descriptionKey: "oxfordDesc",
+      image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
+      materials: [
+        { id: "black-calf", labelKey: "blackCalfLeather", descriptionKey: "blackCalfDesc" },
+      ],
+    },
+    {
+      id: "espadrille",
+      label: t.espadrille,
+      descriptionKey: "espadrilleDesc",
+      image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
+      materials: [
+        { id: "black-suade", labelKey: "blackSuade", descriptionKey: "blackSuadeDesc" },
+        { id: "brown-suade", labelKey: "brownSuade", descriptionKey: "brownSuadeDesc" },
+      ],
+    },
+  ];
+}
 
 export default function CustomizerSection() {
   const [selectedShoe, setSelectedShoe] = useState("penny-loafer");
   const [selectedMaterial, setSelectedMaterial] = useState("black-satin");
   const { language } = useLanguage();
   const t = translations[language];
+  const shoeTypes = getShoeTypes(t);
 
   const currentShoe = shoeTypes.find((s) => s.id === selectedShoe)!;
 
@@ -144,7 +147,7 @@ export default function CustomizerSection() {
               >
                 {currentShoe.label}
                 {" "}·{" "}
-                {currentShoe.materials.find((m) => m.id === selectedMaterial)?.label}
+                {t[currentShoe.materials.find((m) => m.id === selectedMaterial)?.labelKey as keyof typeof t]}
               </p>
             </div>
           </div>
@@ -207,7 +210,7 @@ export default function CustomizerSection() {
                           fontWeight: 300,
                         }}
                       >
-                        {shoe.description}
+                        {t[shoe.descriptionKey as keyof typeof t]}
                       </p>
                     </div>
                     {isSelected && (
@@ -264,7 +267,7 @@ export default function CustomizerSection() {
                             marginBottom: "0.2rem",
                           }}
                         >
-                          {material.label}
+                          {t[material.labelKey as keyof typeof t]}
                         </p>
                         <p
                           style={{
@@ -274,7 +277,7 @@ export default function CustomizerSection() {
                             fontWeight: 300,
                           }}
                         >
-                          {material.description}
+                          {t[material.descriptionKey as keyof typeof t]}
                         </p>
                       </div>
                       {isSelected && (
