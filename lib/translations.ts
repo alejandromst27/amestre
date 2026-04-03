@@ -20,7 +20,7 @@ export const translations = {
     processHeadline: "Five steps to shoes that fit like no other",
     step1Title: "Select Your Model",
     step1Desc:
-      "Choose from our three expertly designed shoe models: Penny Loafer, Oxford, or Espadrille. Pick the style that best fits your lifestyle.",
+      "Choose from our curated shoe models. Pick the style that best fits your lifestyle.",
     step2Title: "Choose Material & Color",
     step2Desc:
       "Select your preferred material and color for your chosen model. Each combination is carefully curated for quality and aesthetics.",
@@ -107,13 +107,13 @@ export const translations = {
     processHeadline: "Cinco pasos para zapatos que se ajustan como ninguno otro",
     step1Title: "Selecciona Tu Modelo",
     step1Desc:
-      "Elige entre nuestros tres modelos de zapatos expertamente diseñados: Penny Loafer, Oxford o Espadrille. Elige el estilo que mejor se adapte a tu estilo de vida.",
+      "Elige entre nuestros modelos. Elige el estilo que mejor se adapte a tu estilo de vida.",
     step2Title: "Elige Material y Color",
     step2Desc:
       "Selecciona tu material y color preferidos para tu modelo elegido. Cada combinación está cuidadosamente seleccionada para calidad y estética.",
-    step3Title: "Descarga A.Mestre App",
+    step3Title: "Descarga Nuestra App",
     step3Desc:
-      "Descarga nuestra aplicación A.Mestre y usa nuestra tecnología de escaneo de pie con IA. Toma 3 fotos simples de tu pie — capturamos tus medidas exactas.",
+      "Descarga nuestra aplicación y usa nuestra tecnología de escaneo. Sigue las instrucciones de la aplicación — capturamos tus medidas exactas.",
     step4Title: "Confirma en Checkout",
     step4Desc:
       "Revisa tu modelo, material, color y medidas escaneadas. Confirma que todo es perfecto antes de que comencemos a fabricar tus zapatos.",
