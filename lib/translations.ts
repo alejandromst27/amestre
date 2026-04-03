@@ -172,7 +172,7 @@ export const translations = {
 export const faqTranslations = {
   en: [
     {
-      question: "What makes A.MESTRE shoes different?",
+      question: "What makes A.Mestre shoes different?",
       answer:
         "Our shoes combine beautifully designed silhouettes with precision-fit technology. We start with three expertly designed styles—Penny Loafer, Oxford, and Espadrille—each available in carefully selected materials and colors. Then we customize each pair to your exact foot measurements using AI-powered scanning. The result is a perfectly fitting shoe that's crafted just for you.",
     },
@@ -189,7 +189,7 @@ export const faqTranslations = {
     {
       question: "What styles and materials are available?",
       answer:
-        "We offer three beautifully designed shoe styles, each A.MESTRE's interpretation of a classic: Penny Loafer, Oxford, and Espadrille. Each style comes in carefully selected materials and colors. Penny Loafers are available in black satin leather, grain black leather, and brown suade. Oxfords come in black calf leather. Espadrilles are available in black suade and brown suade. The designs are fixed—our value comes from making them perfectly fit YOUR feet.",
+        "We offer three beautifully designed shoe styles, each A.Mestre's interpretation of a classic: Penny Loafer, Oxford, and Espadrille. Each style comes in carefully selected materials and colors. Penny Loafers are available in black satin leather, grain black leather, and brown suade. Oxfords come in black calf leather. Espadrilles are available in black suade and brown suade. The designs are fixed—our value comes from making them perfectly fit YOUR feet.",
     },
     {
       question: "How does the made-to-measure process work?",
@@ -219,7 +219,7 @@ export const faqTranslations = {
   ],
   es: [
     {
-      question: "¿Qué hace que los zapatos A.MESTRE sean diferentes?",
+      question: "¿Qué hace que los zapatos A.Mestre sean diferentes?",
       answer:
         "Nuestros zapatos combinan siluetas bellamente diseñadas con tecnología de ajuste de precisión. Comenzamos con tres estilos expertamente diseñados—Penny Loafer, Oxford y Espadrille—cada uno disponible en materiales y colores cuidadosamente seleccionados. Luego personalizamos cada par según tus medidas exactas de pie usando escaneo impulsado por IA. El resultado es un zapato perfectamente ajustado que se crea solo para ti.",
     },
@@ -236,7 +236,7 @@ export const faqTranslations = {
     {
       question: "¿Qué estilos y materiales están disponibles?",
       answer:
-        "Ofrecemos tres estilos de zapatos bellamente diseñados, cada uno es la interpretación de A.MESTRE de un clásico: Penny Loafer, Oxford y Espadrille. Cada estilo viene en materiales y colores cuidadosamente seleccionados. Los Penny Loafers están disponibles en cuero satinado negro, cuero grano negro y gamuza marrón. Los Oxfords vienen en cuero de becerro negro. Las Espadrilles están disponibles en gamuza negra y gamuza marrón. Los diseños son fijos—nuestro valor proviene de hacerlos ajustarse perfectamente a TUS pies.",
+        "Ofrecemos tres estilos de zapatos bellamente diseñados, cada uno es la interpretación de A.Mestre de un clásico: Penny Loafer, Oxford y Espadrille. Cada estilo viene en materiales y colores cuidadosamente seleccionados. Los Penny Loafers están disponibles en cuero satinado negro, cuero grano negro y gamuza marrón. Los Oxfords vienen en cuero de becerro negro. Las Espadrilles están disponibles en gamuza negra y gamuza marrón. Los diseños son fijos—nuestro valor proviene de hacerlos ajustarse perfectamente a TUS pies.",
     },
     {
       question: "¿Cómo funciona el proceso hecho a medida?",

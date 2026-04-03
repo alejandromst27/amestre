@@ -48,7 +48,7 @@ export default function Footer() {
               marginBottom: "1rem",
             }}
           >
-            A.MESTRE
+            A.Mestre
           </p>
           <p
             style={{

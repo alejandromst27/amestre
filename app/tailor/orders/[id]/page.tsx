@@ -136,7 +136,7 @@ export default function OrderDetail() {
               color: "#f0ebe4",
             }}
           >
-            A.MESTRE
+            A.Mestre
           </span>
           <span
             style={{

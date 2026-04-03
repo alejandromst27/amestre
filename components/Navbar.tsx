@@ -62,7 +62,7 @@ export default function Navbar() {
               color: "#1a1a1a",
             }}
           >
-            A.MESTRE
+            A.Mestre
           </span>
         </Link>
 

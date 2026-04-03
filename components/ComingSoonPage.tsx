@@ -28,7 +28,7 @@ export default function ComingSoonPage() {
               cursor: "pointer",
             }}
           >
-            A.MESTRE
+            A.Mestre
           </h1>
         </Link>
 

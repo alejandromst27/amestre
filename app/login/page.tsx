@@ -76,7 +76,7 @@ export default function LoginPage() {
                 color: "#f0ebe4",
               }}
             >
-              A.MESTRE
+              A.Mestre
             </span>
           </Link>
           <p

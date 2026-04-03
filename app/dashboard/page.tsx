@@ -46,7 +46,7 @@ export default async function DashboardPage() {
                 color: "#f0ebe4",
               }}
             >
-              A.MESTRE
+              A.Mestre
             </p>
             <p
               style={{
