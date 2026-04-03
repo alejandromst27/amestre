@@ -185,7 +185,7 @@ export const faqTranslations = {
     {
       question: "How does foot scanning work?",
       answer:
-        "We use photogrammetry technology to create a real-time 3D model of your foot. Simply take 3 photos (top view and both side views) with your smartphone. Our photogrammetry algorithm converts these images into precise 3D measurements that capture your foot's unique geometry. With a standard A4 sheet as reference for scale, we achieve the accuracy needed for custom shoe fitting.",
+        "Through the A.Mestre mobile app, you capture your foot in under two minutes using your phone camera. Our technology uses photogrammetry to generate a three-dimensional map with millimetre precision, measuring length, width, instep and arch. No store visit or appointment required.",
     },
     {
       question: "What information do I need to provide for the scan?",
@@ -232,7 +232,7 @@ export const faqTranslations = {
     {
       question: "¿Cómo funciona el escaneo de pie?",
       answer:
-        "Utilizamos tecnología de fotogrametría para crear un modelo 3D en tiempo real de tu pie. Simplemente toma 3 fotos (vista superior y ambas vistas laterales) con tu smartphone. Nuestro algoritmo de fotogrametría convierte estas imágenes en medidas 3D precisas que capturan la geometría única de tu pie. Con una hoja A4 estándar como referencia de escala, logramos la precisión necesaria para un ajuste de zapato personalizado.",
+        "A través de la aplicación móvil A.Mestre, capturas tu pie en menos de dos minutos usando la cámara de tu teléfono. Nuestra tecnología utiliza fotogrametría para generar un mapa tridimensional de precisión milimétrica, tomando valores como longitud, anchura, empeine y arco. No se requiere visita a tienda ni cita previa.",
     },
     {
       question: "¿Qué información necesito proporcionar para el escaneo?",
