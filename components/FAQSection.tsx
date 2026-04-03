@@ -1,52 +1,13 @@
 "use client";
 
 import { useState } from "react";
-
-const faqs = [
-  {
-    question: "How accurate is the AI foot scanning?",
-    answer:
-      "Our AI-powered foot scanning technology captures measurements with 2-4mm precision using standard smartphone cameras. We use a reference object (like an A4 sheet) to calibrate scale. This accuracy is sufficient for custom shoe fitting and can be refined during the sample fitting phase if needed.",
-  },
-  {
-    question: "What information do I need to provide for the scan?",
-    answer:
-      "You'll need to take 3 photos: top view, lateral view (inside), and lateral view (outside) of your foot. We recommend natural lighting and having a standard A4 sheet nearby as a reference. The process takes about 2-3 minutes and can be done from your phone.",
-  },
-  {
-    question: "Can I customize the heel height and toe shape?",
-    answer:
-      "Absolutely. We offer multiple options: toe shapes (round, pointed, square), heel heights (flat, 1 inch, 2 inch), closures (lace-up, buckle, slip-on), and sole types (leather, rubber). You can also specify custom colors and materials during the customization phase.",
-  },
-  {
-    question: "What happens during the sample fitting?",
-    answer:
-      "After we craft your shoes based on your scanned measurements and customization choices, we send you a sample for fitting. You can try them on and provide feedback. Our master cobblers then make any necessary adjustments and create your final pair with those refinements.",
-  },
-  {
-    question: "How long does the entire process take?",
-    answer:
-      "From foot scan to final delivery typically takes 6-8 weeks. This includes customization consultation (1-2 weeks), last creation (1 week), initial sample production (2-3 weeks), sample fitting and adjustments (1 week), and final production and delivery (1-2 weeks).",
-  },
-  {
-    question: "What materials are available for the upper and sole?",
-    answer:
-      "We work with premium materials including full-grain leather, suede, and exotic skins for the upper. For soles, you can choose traditional leather (elegant, develops patina) or durable rubber (practical, long-lasting). All materials are sourced from trusted suppliers in Italy and Spain.",
-  },
-  {
-    question: "What if the fit isn't perfect on the first pair?",
-    answer:
-      "We stand behind our craftsmanship. If adjustments are needed after the sample fitting, we'll make them before creating your final pair. Since we've created a custom last (mold) specifically for your feet, future pairs will maintain the same fit with minimal adjustments.",
-  },
-  {
-    question: "How much do bespoke shoes typically cost?",
-    answer:
-      "Bespoke shoes start at $1,200 and can go higher depending on materials and customization. Made-to-measure options start at $800. Each pair is handcrafted by master cobblers, which reflects in the price and exceptional quality. We believe this investment creates shoes that last decades.",
-  },
-];
+import { useLanguage } from "@/lib/LanguageContext";
+import { faqTranslations, labels } from "@/lib/translations";
 
 export default function FAQSection() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
+  const { language } = useLanguage();
+  const faqs = faqTranslations[language];
 
   return (
     <section
@@ -69,7 +30,7 @@ export default function FAQSection() {
               fontFamily: "var(--font-inter), sans-serif",
             }}
           >
-            FREQUENTLY ASKED
+            {labels[language].frequentlyAsked}
           </p>
           <h2
             style={{
@@ -80,7 +41,7 @@ export default function FAQSection() {
               lineHeight: 1.1,
             }}
           >
-            Questions about bespoke footwear
+            {labels[language].questionsAbout}
           </h2>
         </div>
 
@@ -176,7 +137,7 @@ export default function FAQSection() {
               fontWeight: 300,
             }}
           >
-            Still have questions? We're here to help.
+            {labels[language].stillHaveQuestions}
           </p>
           <a
             href="mailto:hello@a-mestre.com"
@@ -195,7 +156,7 @@ export default function FAQSection() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e0c99a")}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c9a96e")}
           >
-            GET IN TOUCH
+            {labels[language].getInTouch}
           </a>
         </div>
       </div>

@@ -3,11 +3,13 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
 import { createClient } from "@/lib/supabase-browser";
+import { useLanguage } from "@/lib/LanguageContext";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
   const [role, setRole] = useState<string | null>(null);
   const [loggedIn, setLoggedIn] = useState(false);
+  const { language, setLanguage } = useLanguage();
 
   useEffect(() => {
     const supabase = createClient();
@@ -70,6 +72,47 @@ export default function Navbar() {
           <NavLink href="#process">The Process</NavLink>
           <NavLink href="#customize">Customize</NavLink>
           <NavLink href="#about">About</NavLink>
+
+          {/* Language Switcher */}
+          <div style={{ display: "flex", gap: "0.5rem", alignItems: "center", borderLeft: "1px solid #d0d0d0", paddingLeft: "2.5rem" }}>
+            <button
+              onClick={() => setLanguage("en")}
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                fontSize: "0.75rem",
+                letterSpacing: "0.15em",
+                fontFamily: "var(--font-inter), sans-serif",
+                fontWeight: language === "en" ? 500 : 400,
+                color: language === "en" ? "#c9a96e" : "#6b6b6b",
+                transition: "color 0.2s",
+              }}
+              onMouseEnter={(e) => !language.includes("en") && (e.currentTarget.style.color = "#1a1a1a")}
+              onMouseLeave={(e) => !language.includes("en") && (e.currentTarget.style.color = "#6b6b6b")}
+            >
+              EN
+            </button>
+            <span style={{ color: "#d0d0d0" }}>/</span>
+            <button
+              onClick={() => setLanguage("es")}
+              style={{
+                background: "none",
+                border: "none",
+                cursor: "pointer",
+                fontSize: "0.75rem",
+                letterSpacing: "0.15em",
+                fontFamily: "var(--font-inter), sans-serif",
+                fontWeight: language === "es" ? 500 : 400,
+                color: language === "es" ? "#c9a96e" : "#6b6b6b",
+                transition: "color 0.2s",
+              }}
+              onMouseEnter={(e) => !language.includes("es") && (e.currentTarget.style.color = "#1a1a1a")}
+              onMouseLeave={(e) => !language.includes("es") && (e.currentTarget.style.color = "#6b6b6b")}
+            >
+              ES
+            </button>
+          </div>
 
           {loggedIn ? (
             <Link
