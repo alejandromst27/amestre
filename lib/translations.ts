@@ -24,9 +24,9 @@ export const translations = {
     step2Title: "Choose Material & Color",
     step2Desc:
       "Select your preferred material and color for your chosen model. Each combination is carefully curated for quality and aesthetics.",
-    step3Title: "Download A.Mestre App",
+    step3Title: "Download Our App",
     step3Desc:
-      "Download our A.Mestre app and use our AI-powered foot scanning technology. Take 3 simple photos of your foot — we capture your exact measurements.",
+      "Download our app and use our foot scanning technology. Follow the app instructions — we capture your exact measurements.",
     step4Title: "Confirm in Checkout",
     step4Desc:
       "Review your model, material, color, and scanned measurements. Confirm everything is perfect before we start crafting your shoes.",
