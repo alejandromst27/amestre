@@ -25,6 +25,11 @@ function getSteps(t: typeof translations.en) {
       title: t.step4Title,
       description: t.step4Desc,
     },
+    {
+      number: "05",
+      title: t.step5Title,
+      description: t.step5Desc,
+    },
   ];
 }
 

@@ -90,7 +90,7 @@ export default function HeroSection() {
             style={{
               padding: "1rem 2.5rem",
               backgroundColor: "#000000",
-              color: "#0a0a0a",
+              color: "#ffffff",
               textDecoration: "none",
               fontSize: "0.75rem",
               letterSpacing: "0.2em",
@@ -99,7 +99,7 @@ export default function HeroSection() {
               display: "inline-block",
               transition: "background-color 0.2s",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e0c99a")}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#333333")}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#000000")}
           >
             {t.startYourJourney}

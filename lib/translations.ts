@@ -9,7 +9,7 @@ export const translations = {
 
     // Hero Section
     heroEyebrow: "BESPOKE FOOTWEAR — BUILT FOR YOU",
-    heroHeadline: "Your Perfect Shoe Awaits",
+    heroHeadline: "Perfect fit, everytime.",
     heroSubheadline:
       "From your foot scan to your perfect fit, every shoe is crafted around your unique measurements and your comfort.",
     startYourJourney: "START YOUR JOURNEY",
@@ -17,19 +17,22 @@ export const translations = {
 
     // Process Section
     processEyebrow: "THE PROCESS",
-    processHeadline: "Four steps to shoes that fit like no other",
-    step1Title: "Choose Your Style",
+    processHeadline: "Five steps to shoes that fit like no other",
+    step1Title: "Select Your Model",
     step1Desc:
-      "Browse our curated shoe collection. Tell us about your style, daily needs, and preferences — we match you with the perfect silhouette.",
-    step2Title: "Foot Scan",
+      "Choose from our three expertly designed shoe models: Penny Loafer, Oxford, or Espadrille. Pick the style that best fits your lifestyle.",
+    step2Title: "Choose Material & Color",
     step2Desc:
-      "Using your smartphone and our AI-powered app, snap a few photos of your foot. We capture your exact measurements with precision.",
-    step3Title: "Material Selection",
+      "Select your preferred material and color for your chosen model. Each combination is carefully curated for quality and aesthetics.",
+    step3Title: "Download A.Mestre App",
     step3Desc:
-      "Choose your preferred material and color for your selected shoe model. Our craftsmen create a custom last (mold) designed specifically for your feet.",
-    step4Title: "Final Delivery",
+      "Download our A.Mestre app and use our AI-powered foot scanning technology. Take 3 simple photos of your foot — we capture your exact measurements.",
+    step4Title: "Confirm in Checkout",
     step4Desc:
-      "Your bespoke shoes are handcrafted and delivered directly to your door. Shoes made entirely for your feet.",
+      "Review your model, material, color, and scanned measurements. Confirm everything is perfect before we start crafting your shoes.",
+    step5Title: "Wait 3-4 Weeks",
+    step5Desc:
+      "Your bespoke shoes are handcrafted by our master cobblers and delivered directly to your door. Shoes made entirely for your feet.",
 
     // Customizer Section
     customizeEyebrow: "MAKE IT YOURS",
@@ -93,7 +96,7 @@ export const translations = {
 
     // Hero Section
     heroEyebrow: "CALZADO HECHO A MEDIDA — HECHO PARA TI",
-    heroHeadline: "Tu Zapato Perfecto Te Espera",
+    heroHeadline: "Ajuste perfecto, siempre.",
     heroSubheadline:
       "Desde tu escaneo de pie hasta tu ajuste perfecto, cada zapato se crea en torno a tus medidas únicas y tu comodidad.",
     startYourJourney: "COMIENZA TU VIAJE",
@@ -101,19 +104,22 @@ export const translations = {
 
     // Process Section
     processEyebrow: "EL PROCESO",
-    processHeadline: "Cuatro pasos para zapatos que se ajustan como ninguno otro",
-    step1Title: "Elige Tu Estilo",
+    processHeadline: "Cinco pasos para zapatos que se ajustan como ninguno otro",
+    step1Title: "Selecciona Tu Modelo",
     step1Desc:
-      "Explora nuestra colección de zapatos seleccionados. Cuéntanos sobre tu estilo, necesidades diarias y preferencias — te ayudamos a encontrar la silueta perfecta.",
-    step2Title: "Escaneo de Pie",
+      "Elige entre nuestros tres modelos de zapatos expertamente diseñados: Penny Loafer, Oxford o Espadrille. Elige el estilo que mejor se adapte a tu estilo de vida.",
+    step2Title: "Elige Material y Color",
     step2Desc:
-      "Usa tu smartphone y nuestra aplicación impulsada por IA para tomar algunas fotos de tu pie. Capturamos tus medidas exactas con precisión.",
-    step3Title: "Selección de Material",
+      "Selecciona tu material y color preferidos para tu modelo elegido. Cada combinación está cuidadosamente seleccionada para calidad y estética.",
+    step3Title: "Descarga A.Mestre App",
     step3Desc:
-      "Elige tu material y color preferidos para tu modelo de zapato seleccionado. Nuestros artesanos crean un molde personalizado diseñado específicamente para tus pies.",
-    step4Title: "Entrega Final",
+      "Descarga nuestra aplicación A.Mestre y usa nuestra tecnología de escaneo de pie con IA. Toma 3 fotos simples de tu pie — capturamos tus medidas exactas.",
+    step4Title: "Confirma en Checkout",
     step4Desc:
-      "Tus zapatos hechos a medida se fabrican a mano y se entregan directamente en tu puerta. Zapatos hechos enteramente para tus pies.",
+      "Revisa tu modelo, material, color y medidas escaneadas. Confirma que todo es perfecto antes de que comencemos a fabricar tus zapatos.",
+    step5Title: "Espera 3-4 Semanas",
+    step5Desc:
+      "Tus zapatos hechos a medida se fabrican a mano por nuestros maestros zapateros y se entregan directamente en tu puerta. Zapatos hechos enteramente para tus pies.",
 
     // Customizer Section
     customizeEyebrow: "HAZLO TUYO",

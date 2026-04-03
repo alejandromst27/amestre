@@ -234,22 +234,26 @@ export default function CustomizerSection() {
               >
                 Select Material
               </h3>
-              {currentShoe.materials.map((material) => {
-                const isSelected = selectedMaterial === material.id;
-                return (
-                  <button
-                    key={material.id}
-                    onClick={() => setSelectedMaterial(material.id)}
+              <div style={{ display: "flex", gap: "0.75rem", flexWrap: "wrap" }}>
+                {currentShoe.materials.map((material) => {
+                  const isSelected = selectedMaterial === material.id;
+                  return (
+                    <button
+                      key={material.id}
+                      onClick={() => setSelectedMaterial(material.id)}
                       style={{
-                        padding: "1.25rem 1.5rem",
+                        padding: "0.75rem 1.25rem",
                         background: isSelected ? "#f0ede8" : "transparent",
                         border: `1px solid ${isSelected ? "#000000" : "#d0d0d0"}`,
                         cursor: "pointer",
-                        textAlign: "left",
+                        textAlign: "center",
                         transition: "all 0.2s",
                         display: "flex",
-                        justifyContent: "space-between",
+                        flexDirection: "column",
                         alignItems: "center",
+                        justifyContent: "center",
+                        flex: 1,
+                        minWidth: "140px",
                       }}
                       onMouseEnter={(e) => {
                         if (!isSelected) e.currentTarget.style.borderColor = "#6b6b6b";
@@ -262,9 +266,10 @@ export default function CustomizerSection() {
                         <p
                           style={{
                             fontFamily: "var(--font-cormorant), serif",
-                            fontSize: "1.2rem",
+                            fontSize: "1rem",
                             color: isSelected ? "#1a1a1a" : "#6b6b6b",
                             marginBottom: "0.2rem",
+                            margin: 0,
                           }}
                         >
                           {t[material.labelKey as keyof typeof t]}
@@ -272,20 +277,22 @@ export default function CustomizerSection() {
                         <p
                           style={{
                             fontFamily: "var(--font-inter), sans-serif",
-                            fontSize: "0.75rem",
+                            fontSize: "0.7rem",
                             color: "#6b6b6b",
                             fontWeight: 300,
+                            margin: 0,
                           }}
                         >
                           {t[material.descriptionKey as keyof typeof t]}
                         </p>
                       </div>
                       {isSelected && (
-                        <span style={{ color: "#000000", fontSize: "1.2rem" }}>✓</span>
+                        <span style={{ color: "#000000", fontSize: "1.2rem", marginTop: "0.25rem" }}>✓</span>
                       )}
                     </button>
                   );
                 })}
+              </div>
             </div>
 
             <p
