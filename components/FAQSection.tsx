@@ -146,7 +146,7 @@ export default function FAQSection() {
               display: "inline-block",
               padding: "0.75rem 2rem",
               backgroundColor: "#000000",
-              color: "#0a0a0a",
+              color: "#ffffff",
               textDecoration: "none",
               fontSize: "0.75rem",
               letterSpacing: "0.2em",
@@ -154,7 +154,7 @@ export default function FAQSection() {
               fontWeight: 500,
               transition: "background-color 0.2s",
             }}
-            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e0c99a")}
+            onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#333333")}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#000000")}
           >
             {translations[language].getInTouch}

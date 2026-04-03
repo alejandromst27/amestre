@@ -4,19 +4,19 @@ export const translations = {
     theProcess: "The Process",
     customize: "Customize",
     about: "About",
-    signIn: "SIGN IN",
-    myAccount: "MY ACCOUNT",
+    signIn: "Sign In",
+    myAccount: "My Account",
 
     // Hero Section
-    heroEyebrow: "BESPOKE FOOTWEAR — BUILT FOR YOU",
+    heroEyebrow: "Bespoke Footwear — Built For You",
     heroHeadline: "Perfect fit, everytime.",
     heroSubheadline:
       "From your foot scan to your perfect fit, every shoe is crafted around your unique measurements and your comfort.",
-    startYourJourney: "START YOUR JOURNEY",
-    howItWorks: "HOW IT WORKS",
+    startYourJourney: "Start Your Journey",
+    howItWorks: "How It Works",
 
     // Process Section
-    processEyebrow: "THE PROCESS",
+    processEyebrow: "The Process",
     processHeadline: "Five steps to shoes that fit like no other",
     step1Title: "Select Your Model",
     step1Desc:
@@ -35,8 +35,8 @@ export const translations = {
       "Your bespoke shoes are handcrafted by our master cobblers and delivered directly to your door. Shoes made entirely for your feet.",
 
     // Customizer Section
-    customizeEyebrow: "MAKE IT YOURS",
-    customizeHeadline: "Your shoe, your way",
+    customizeEyebrow: "Select Model and Material",
+    customizeHeadline: "Select Model and Material",
     chooseStyle: "Choose Your Style",
     selectSole: "Select Sole",
     noCustomizationMsg: "This style comes in one bespoke version with no additional customization.",
@@ -76,13 +76,13 @@ export const translations = {
     thankYouMsg: "✓ Thank you! We'll notify you when tailoring launches.",
 
     // FAQ
-    frequentlyAsked: "FREQUENTLY ASKED",
+    frequentlyAsked: "Frequently Asked",
     questionsAbout: "Questions about bespoke footwear",
     stillHaveQuestions: "Still have questions? We're here to help.",
     getInTouch: "GET IN TOUCH",
 
     // Footer
-    craftsmen: "CRAFTSMEN",
+    craftsmen: "Craftsmen",
     portal: "Portal",
     footerTagline: "Precision-crafted bespoke shoes",
   },
@@ -91,19 +91,19 @@ export const translations = {
     theProcess: "El Proceso",
     customize: "Personalizar",
     about: "Acerca de",
-    signIn: "INICIAR SESIÓN",
-    myAccount: "MI CUENTA",
+    signIn: "Iniciar Sesión",
+    myAccount: "Mi Cuenta",
 
     // Hero Section
-    heroEyebrow: "CALZADO HECHO A MEDIDA — HECHO PARA TI",
+    heroEyebrow: "Calzado Hecho A Medida — Hecho Para Ti",
     heroHeadline: "Ajuste perfecto, siempre.",
     heroSubheadline:
       "Desde tu escaneo de pie hasta tu ajuste perfecto, cada zapato se crea en torno a tus medidas únicas y tu comodidad.",
-    startYourJourney: "COMIENZA TU VIAJE",
-    howItWorks: "CÓMO FUNCIONA",
+    startYourJourney: "Comienza Tu Viaje",
+    howItWorks: "Cómo Funciona",
 
     // Process Section
-    processEyebrow: "EL PROCESO",
+    processEyebrow: "El Proceso",
     processHeadline: "Cinco pasos para zapatos que se ajustan como ninguno otro",
     step1Title: "Selecciona Tu Modelo",
     step1Desc:
@@ -122,8 +122,8 @@ export const translations = {
       "Tus zapatos hechos a medida se fabrican a mano por nuestros maestros zapateros y se entregan directamente en tu puerta. Zapatos hechos enteramente para tus pies.",
 
     // Customizer Section
-    customizeEyebrow: "HAZLO TUYO",
-    customizeHeadline: "Tu zapato, a tu manera",
+    customizeEyebrow: "Selecciona Modelo y Material",
+    customizeHeadline: "Selecciona Modelo y Material",
     chooseStyle: "Elige Tu Estilo",
     selectSole: "Selecciona Suela",
     noCustomizationMsg: "Este estilo viene en una versión hecha a medida sin personalización adicional.",
@@ -163,13 +163,13 @@ export const translations = {
     thankYouMsg: "✓ ¡Gracias! Te notificaremos cuando se lance la sastrería.",
 
     // FAQ
-    frequentlyAsked: "PREGUNTAS FRECUENTES",
+    frequentlyAsked: "Preguntas Frecuentes",
     questionsAbout: "Preguntas sobre calzado hecho a medida",
     stillHaveQuestions: "¿Aún tienes preguntas? Estamos aquí para ayudarte.",
     getInTouch: "CONTÁCTANOS",
 
     // Footer
-    craftsmen: "ARTESANOS",
+    craftsmen: "Artesanos",
     portal: "Portal",
     footerTagline: "Zapatos hechos a medida con precisión",
   },

@@ -213,9 +213,6 @@ export default function CustomizerSection() {
                         {t[shoe.descriptionKey as keyof typeof t]}
                       </p>
                     </div>
-                    {isSelected && (
-                      <span style={{ color: "#000000", fontSize: "1.2rem" }}>✓</span>
-                    )}
                   </button>
                 );
               })}
@@ -286,9 +283,6 @@ export default function CustomizerSection() {
                           {t[material.descriptionKey as keyof typeof t]}
                         </p>
                       </div>
-                      {isSelected && (
-                        <span style={{ color: "#000000", fontSize: "1.2rem", marginTop: "0.25rem" }}>✓</span>
-                      )}
                     </button>
                   );
                 })}
@@ -304,7 +298,7 @@ export default function CustomizerSection() {
                 fontWeight: 300,
               }}
             >
-              Each shoe is handcrafted to your exact measurements. The design is fixed—the customization comes from the perfect fit to your feet and your choice of material.
+              Each shoe is handcrafted to your exact measurements.
             </p>
           </div>
         </div>

@@ -72,7 +72,6 @@ export default function Navbar() {
           className="desktop-nav"
         >
           <NavLink href="#process">{t.theProcess}</NavLink>
-          <NavLink href="#customize">{t.customize}</NavLink>
           <NavLink href="#about">{t.about}</NavLink>
 
           {/* Language Switcher */}
@@ -201,7 +200,6 @@ export default function Navbar() {
           }}
         >
           <NavLink href="#process" onClick={() => setMenuOpen(false)}>{t.theProcess}</NavLink>
-          <NavLink href="#customize" onClick={() => setMenuOpen(false)}>{t.customize}</NavLink>
           <NavLink href="#about" onClick={() => setMenuOpen(false)}>{t.about}</NavLink>
           <Link
             href={loggedIn ? "/dashboard" : "/login"}
