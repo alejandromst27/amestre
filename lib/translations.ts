@@ -193,11 +193,6 @@ export const faqTranslations = {
         "You'll need to take 3 photos: top view, lateral view (inside), and lateral view (outside) of your foot. We recommend natural lighting and having a standard A4 sheet nearby as a reference. The process takes about 2-3 minutes and can be done from your phone.",
     },
     {
-      question: "What styles and materials are available?",
-      answer:
-        "We offer three beautifully designed shoe styles, each A.Mestre's interpretation of a classic: Penny Loafer, Oxford, and Espadrille. Each style comes in carefully selected materials and colors. Penny Loafers are available in black satin leather, grain black leather, and brown suade. Oxfords come in black calf leather. Espadrilles are available in black suade and brown suade. The designs are fixed—our value comes from making them perfectly fit YOUR feet.",
-    },
-    {
       question: "How does the made-to-measure process work?",
       answer:
         "After your foot scan, we create a custom last (mold) based on your exact measurements. This last becomes the foundation for crafting your shoes. We then produce a sample shoe using your last, send it to you for fitting, and gather feedback. Our master cobblers make any final adjustments, and then we craft your final pair using that custom-made mold.",
@@ -238,11 +233,6 @@ export const faqTranslations = {
       question: "¿Qué información necesito proporcionar para el escaneo?",
       answer:
         "Necesitarás tomar 3 fotos: vista superior, vista lateral (interior) y vista lateral (exterior) de tu pie. Recomendamos iluminación natural y tener una hoja A4 estándar cerca como referencia. El proceso toma aproximadamente 2-3 minutos y se puede hacer desde tu teléfono.",
-    },
-    {
-      question: "¿Qué estilos y materiales están disponibles?",
-      answer:
-        "Ofrecemos tres estilos de zapatos bellamente diseñados, cada uno es la interpretación de A.Mestre de un clásico: Penny Loafer, Oxford y Espadrille. Cada estilo viene en materiales y colores cuidadosamente seleccionados. Los Penny Loafers están disponibles en cuero satinado negro, cuero grano negro y gamuza marrón. Los Oxfords vienen en cuero de becerro negro. Las Espadrilles están disponibles en gamuza negra y gamuza marrón. Los diseños son fijos—nuestro valor proviene de hacerlos ajustarse perfectamente a TUS pies.",
     },
     {
       question: "¿Cómo funciona el proceso hecho a medida?",
