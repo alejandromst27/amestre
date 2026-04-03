@@ -195,7 +195,7 @@ export const faqTranslations = {
     {
       question: "How does the made-to-measure process work?",
       answer:
-        "After your foot scan, we create a custom last (mold) based on your exact measurements. This last becomes the foundation for crafting your shoes. We then produce a sample shoe using your last, send it to you for fitting, and gather feedback. Our master cobblers make any final adjustments, and then we craft your final pair using that custom-made mold.",
+        "After your foot scan, we create a custom last based on your exact measurements. This last becomes the foundation for crafting your shoes. Our master cobblers build your final pair directly on that last, ensuring a precise fit from the moment you put them on.",
     },
     {
       question: "How long does the entire process take?",
@@ -235,9 +235,9 @@ export const faqTranslations = {
         "Necesitarás tomar 3 fotos: vista superior, vista lateral (interior) y vista lateral (exterior) de tu pie. Recomendamos iluminación natural y tener una hoja A4 estándar cerca como referencia. El proceso toma aproximadamente 2-3 minutos y se puede hacer desde tu teléfono.",
     },
     {
-      question: "¿Cómo funciona el proceso hecho a medida?",
+      question: "¿Cómo funciona el proceso a medida?",
       answer:
-        "Después de tu escaneo de pie, creamos un molde personalizado basado en tus medidas exactas. Este molde se convierte en el fundamento para fabricar tus zapatos. Luego producimos un zapato de muestra usando tu molde, te lo enviamos para probar, y recopilamos tus comentarios. Nuestros maestros zapateros hacen ajustes finales, y luego fabricamos tu par final usando ese molde personalizado.",
+        "Tras el escaneo de tu pie, creamos una horma personalizada basada en tus medidas exactas. Esa horma es la base sobre la que nuestros maestros zapateros construyen tu par final, garantizando un ajuste preciso desde el primer momento.",
     },
     {
       question: "¿Cuánto tiempo toma todo el proceso?",
