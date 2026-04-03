@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import { useLanguage } from "@/lib/LanguageContext";
-import { faqTranslations, labels } from "@/lib/translations";
+import { faqTranslations, translations } from "@/lib/translations";
 
 export default function FAQSection() {
   const [expandedIndex, setExpandedIndex] = useState<number | null>(null);
@@ -30,7 +30,7 @@ export default function FAQSection() {
               fontFamily: "var(--font-inter), sans-serif",
             }}
           >
-            {labels[language].frequentlyAsked}
+            {translations[language].frequentlyAsked}
           </p>
           <h2
             style={{
@@ -41,7 +41,7 @@ export default function FAQSection() {
               lineHeight: 1.1,
             }}
           >
-            {labels[language].questionsAbout}
+            {translations[language].questionsAbout}
           </h2>
         </div>
 
@@ -137,7 +137,7 @@ export default function FAQSection() {
               fontWeight: 300,
             }}
           >
-            {labels[language].stillHaveQuestions}
+            {translations[language].stillHaveQuestions}
           </p>
           <a
             href="mailto:hello@a-mestre.com"
@@ -156,7 +156,7 @@ export default function FAQSection() {
             onMouseEnter={(e) => (e.currentTarget.style.backgroundColor = "#e0c99a")}
             onMouseLeave={(e) => (e.currentTarget.style.backgroundColor = "#c9a96e")}
           >
-            {labels[language].getInTouch}
+            {translations[language].getInTouch}
           </a>
         </div>
       </div>
