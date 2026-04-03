@@ -31,19 +31,6 @@ export default function HeroSection() {
         }}
       />
 
-      {/* Decorative vertical line */}
-      <div
-        style={{
-          position: "absolute",
-          top: 0,
-          left: "50%",
-          width: "1px",
-          height: "120px",
-          background: "linear-gradient(to bottom, transparent, #c9a96e)",
-          marginTop: "72px",
-        }}
-      />
-
       <div
         style={{
           textAlign: "center",
