@@ -41,11 +41,6 @@ export const faqTranslations = {
         "After your foot scan, we create a custom last (mold) based on your exact measurements. This last becomes the foundation for crafting your shoes. We then produce a sample shoe using your last, send it to you for fitting, and gather feedback. Our master cobblers make any final adjustments, and then we craft your final pair using that custom-made mold.",
     },
     {
-      question: "Can I customize the heel height or toe shape?",
-      answer:
-        "No. Each shoe style comes with A.MESTRE's carefully designed heel height and toe shape. What we customize is the most important thing: the fit. Using your foot measurements, we build a custom mold (last) that matches your unique foot shape, giving you a perfect fit unlike any off-the-shelf shoe.",
-    },
-    {
       question: "How long does the entire process take?",
       answer:
         "From foot scan to final delivery typically takes 6-8 weeks. This includes: customization consultation (1-2 weeks), custom last creation (1 week), initial sample production (2-3 weeks), sample fitting and adjustments (1 week), and final production and delivery (1-2 weeks).",
@@ -91,11 +86,6 @@ export const faqTranslations = {
       question: "¿Cómo funciona el proceso hecho a medida?",
       answer:
         "Después de tu escaneo de pie, creamos una forma personalizada (molde) basada en tus medidas exactas. Esta forma se convierte en el fundamento para fabricar tus zapatos. Luego producimos un zapato de muestra usando tu molde, te lo enviamos para probar, y recopilamos tus comentarios. Nuestros maestros zapateros hacen ajustes finales, y luego fabricamos tu par final usando ese molde personalizado.",
-    },
-    {
-      question: "¿Puedo personalizar la altura del tacón o la forma del dedo?",
-      answer:
-        "No. Cada estilo de zapato viene con la altura del tacón y forma del dedo cuidadosamente diseñados por A.MESTRE. Lo que personalizamos es lo más importante: el ajuste. Usando tus medidas de pie, construimos un molde personalizado que coincide con tu forma de pie única, dándote un ajuste perfecto como ningún zapato comercial.",
     },
     {
       question: "¿Cuánto tiempo toma todo el proceso?",
