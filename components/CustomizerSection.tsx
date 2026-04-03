@@ -12,7 +12,7 @@ function getShoeTypes(t: typeof translations.en) {
       descriptionKey: "pennyLoaferDesc",
       image: "https://images.unsplash.com/photo-1548219534-0f1e4a6b2d10?w=400&h=500&fit=crop",
       materials: [
-        { id: "black-satin", labelKey: "blackSatinLeather", descriptionKey: "blackSatinDesc" },
+        { id: "black-calf", labelKey: "blackCalfLeather", descriptionKey: "blackCalfDesc" },
         { id: "grain-black", labelKey: "grainBlackLeather", descriptionKey: "grainBlackDesc" },
         { id: "brown-suade", labelKey: "brownSuade", descriptionKey: "brownSuadeDesc" },
       ],
@@ -41,7 +41,7 @@ function getShoeTypes(t: typeof translations.en) {
 
 export default function CustomizerSection() {
   const [selectedShoe, setSelectedShoe] = useState("penny-loafer");
-  const [selectedMaterial, setSelectedMaterial] = useState("black-satin");
+  const [selectedMaterial, setSelectedMaterial] = useState("black-calf");
   const { language } = useLanguage();
   const t = translations[language];
   const shoeTypes = getShoeTypes(t);
