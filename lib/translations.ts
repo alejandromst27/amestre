@@ -183,9 +183,9 @@ export const faqTranslations = {
         "Our shoes combine beautifully designed silhouettes with precision-fit technology. We start with three expertly designed styles—Penny Loafer, Oxford, and Espadrille—each available in carefully selected materials and colors. Then we customize each pair to your exact foot measurements using AI-powered scanning. The result is a perfectly fitting shoe that's crafted just for you.",
     },
     {
-      question: "How does the AI foot scanning work?",
+      question: "How does foot scanning work?",
       answer:
-        "Our AI foot scanning technology uses your smartphone camera to capture precise measurements of your foot. Simply take 3 photos (top view and both side views) with a standard A4 sheet as reference for scale. Our algorithm analyzes these images and captures your foot dimensions with 2-4mm precision. This is sufficient for custom shoe fitting and refines the process during sample fitting.",
+        "We use photogrammetry technology to create a real-time 3D model of your foot. Simply take 3 photos (top view and both side views) with your smartphone. Our photogrammetry algorithm converts these images into precise 3D measurements that capture your foot's unique geometry. With a standard A4 sheet as reference for scale, we achieve the accuracy needed for custom shoe fitting.",
     },
     {
       question: "What information do I need to provide for the scan?",
@@ -230,9 +230,9 @@ export const faqTranslations = {
         "Nuestros zapatos combinan siluetas bellamente diseñadas con tecnología de ajuste de precisión. Comenzamos con tres estilos expertamente diseñados—Penny Loafer, Oxford y Espadrille—cada uno disponible en materiales y colores cuidadosamente seleccionados. Luego personalizamos cada par según tus medidas exactas de pie usando escaneo impulsado por IA. El resultado es un zapato perfectamente ajustado que se crea solo para ti.",
     },
     {
-      question: "¿Cómo funciona el escaneo de pie con IA?",
+      question: "¿Cómo funciona el escaneo de pie?",
       answer:
-        "Nuestra tecnología de escaneo de pie con IA utiliza la cámara de tu smartphone para capturar medidas precisas de tu pie. Simplemente toma 3 fotos (vista superior y ambas vistas laterales) con una hoja A4 estándar como referencia para la escala. Nuestro algoritmo analiza estas imágenes y captura las dimensiones de tu pie con precisión de 2-4mm. Esto es suficiente para un ajuste personalizado y se refina durante la prueba de muestra.",
+        "Utilizamos tecnología de fotogrametría para crear un modelo 3D en tiempo real de tu pie. Simplemente toma 3 fotos (vista superior y ambas vistas laterales) con tu smartphone. Nuestro algoritmo de fotogrametría convierte estas imágenes en medidas 3D precisas que capturan la geometría única de tu pie. Con una hoja A4 estándar como referencia de escala, logramos la precisión necesaria para un ajuste de zapato personalizado.",
     },
     {
       question: "¿Qué información necesito proporcionar para el escaneo?",
